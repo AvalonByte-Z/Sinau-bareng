@@ -2,13 +2,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+//login
+import Login from "./pages/Login";
+
 const App = () => {
   <Router>
-    <Layout>
-      <Switch>
-        <Route />
-      </Switch>
-    </Layout>
+    <Route path="/login" component={Login} />
   </Router>;
 };
 
