@@ -15,17 +15,20 @@ const Home = () => (
     }}
   >
     <Row>
-      <Col xs={9}>
-        <NavLink to="/login">Login</NavLink>
+      <Col xs={4}>
         <NavLink exact to="/">
           Home
         </NavLink>
-        <NavLink to="/answer">Answer</NavLink>
-        <NavLink to="/AskQuestion">Ask Question</NavLink>
-        <NavLink to="/ListQuestion">[List Question]</NavLink>
+        <NavLink to="/answer">Answer Question</NavLink>
       </Col>
 
-      <Col xs={3}>
+      <Col xs={4}>
+        <NavLink to="/">search bar</NavLink>
+      </Col>
+
+      <Col xs={4}>
+        <NavLink to="/AskQuestion">Ask Question</NavLink>
+        <NavLink to="/ListQuestion">[List Question]</NavLink>
         <NavLink to={`/profile/${USER._id}`}>Profile</NavLink>
         <NavLink to="/ListProfile">[List Profile]</NavLink>
       </Col>
