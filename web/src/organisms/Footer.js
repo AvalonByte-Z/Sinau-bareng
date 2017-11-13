@@ -7,7 +7,7 @@ const style = {
 
 const Footer = () => (
   <div style={style}>
-    <small>2017 &copy; Thq</small>
+    <small>2017 &copy; Sinau Company</small>
   </div>
 );
 
