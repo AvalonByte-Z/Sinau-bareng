@@ -1,14 +1,48 @@
-// Importing react and react router
-import React, { Component } from "react";
+// Importing react
+import React from "react";
+
+// Importing router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-//login
+// Importing layout
+import Layout from "./templates/Layout";
+
+// Importing login pages
 import Login from "./pages/Login";
 
-const App = () => {
-  <Router>
-    <Route path="/login" component={Login} />
-  </Router>;
-};
+// Importing home pages
+import Home from "./pages/Home";
 
+// Importing answer pages
+import Answer from "./pages/Answer";
+
+// Importing question pages
+import Question from "./pages/Question";
+import AskQuestion from "./pages/AskQuestion";
+import ListQuestion from "./pages/ListQuestion";
+
+// Importing profile pages
+import Profile from "./pages/Profile";
+import ListProfile from "./pages/ListProfile";
+
+// Importing notfound pages
+import NotFound from "./pages/NotFound";
+
+const App = () => (
+  <Router>
+    <Layout>
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route exact path="/" component={Home} />
+        <Route path="/answer" component={Answer} />
+        <Route path="/question" component={Question} />
+        <Route path="/askquestion/" component={AskQuestion} />
+        <Route path="/listquestion/" component={ListQuestion} />
+        <Route path="/profile/:id" component={Profile} />
+        <Route path="/listprofile" component={ListProfile} />
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
+  </Router>
+);
 export default App;
