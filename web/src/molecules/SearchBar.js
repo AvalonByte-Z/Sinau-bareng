@@ -1,140 +1,35 @@
-import React, { Component } from "react";
-import list from "./list";
-import { Grid, Row, FormGroup } from "react-bootstrap";
+import React from "react";
+import
+import { Button, Form, FormGroup, Input } from "reactstrap";
 
-// function search
-function isSearched(searchTerm) {
-  return function(item) {
-    return (
-      !searchTerm || item.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  };
-}
+import LinkToProfile from "../atoms/LinkToProfile";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-
-    // ngambil list dari list.js
-    this.state = {
-      list,
-      searchTerm: ""
-    };
-
-    // bind the functions to this (app component)
-    this.removeItem = this.removeItem.bind(this);
-    this.searchValue = this.searchValue.bind(this);
-  }
-
-  // remove
-  removeItem(id) {
-    // const isNotId = item => item.objectID !== id;
-    const updatedList = this.state.list.filter(item => item.objectID !== id);
-    this.setState({ list: updatedList });
-  }
-
-  // get input field value from search form
-  searchValue(event) {
-    // console.log(event)
-    this.setState({ searchTerm: event.target.value });
-  }
-
-  render() {
-    const { list, searchTerm } = this.state;
-
-    console.log(this);
-
-    return (
-      <div>
-        <Grid fluid>
-          <Row>
-            <div className="jumbotron text-center">
-              <Search onChange={this.searchValue} value={searchTerm}>
-                NEWSAPP
-              </Search>
-            </div>
-          </Row>
-        </Grid>
-
-        <Table
-          list={list}
-          searchTerm={searchTerm}
-          removeItem={this.removeItem}
-        />
-      </div>
-    );
-  }
-}
-
-const Search = ({ onChange, value, children }) => {
-  return (
-    <form>
-      <FormGroup>
-        <h1
-          style={{
-            fontWeight: "bold"
-          }}
-        >
-          {children}
-        </h1>
-        <hr
-          style={{
-            border: "2px solid black",
-            width: "100px"
-          }}
-        />
-
-        <div className="input-group">
-          <input
-            className="form-control width100 searchForm"
-            type="text"
-            onChange={onChange}
-            value={value}
-          />
-
-          <span className="input-group-btn">
-            <button className="btn btn-primary searchBtn" type="submit">
-              Search
-            </button>
-          </span>
-        </div>
-      </FormGroup>
-    </form>
-  );
+const USER = {
+  _id: 1,
+  name: "Thoriq",
+  title: "TK"
 };
 
-const Table = ({ list, searchTerm, removeItem }) => {
-  return (
-    <div className="col-sm-10 col-sm-offset-1">
-      {list.filter(isSearched(searchTerm)).map(item => (
-        <div key={item.objectID}>
-          <h1>
-            <a href={item.url}>{item.title}</a>
-          </h1>
-          <h4>
-            {item.author}
-            | {item.num_comments}
-            Comments | {item.points}
-            Points
-            <Button
-              className="btn btn-xs"
-              type="button"
-              onClick={() => removeItem(item.objectID)}
-            >
-              Remove
-            </Button>
-          </h4>
-          <hr />
-        </div>
-      ))}
-    </div>
-  );
-};
-
-const Button = ({ onClick, children, className = "" }) => (
-  <button className={className} onClick={onClick}>
-    {children}
-  </button>
+const AskBar = () => (
+  <Form>
+    <h6>
+      <LinkToProfile user={USER} /> asked
+    </h6>
+    <FormGroup>
+      <Input
+        type="textarea"
+        name="askTextarea"
+        id="askTextarea"
+        placeholder="What is your question?"
+        onKeyDown={e => {
+          if (e.keyCode === 13 && !e.shiftKey) {
+            e.preventDefault();
+          }
+        }}
+      />
+    </FormGroup>
+    <Button color="primary">Ask Question</Button>
+  </Form>
 );
 
-export default App;
+export default AskBar;
