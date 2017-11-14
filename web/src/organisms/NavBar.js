@@ -32,7 +32,8 @@ const StyleNavbarLeft = {
 const StyleNavbarRight = {
   padding: "0",
   fontSize: "90%",
-  marginTop: "5px"
+  marginTop: "5px",
+  float: "right"
 };
 
 const StyleIn = {
@@ -52,6 +53,11 @@ const Home = () => (
             {" "}
             Sinau-Bareng
           </NavLink>
+
+          <NavLink to="/" style={StyleIn}>
+            <img width="40" src="./img/LogoRev2.jpeg" />
+          </NavLink>
+
           <NavLink to="/answer" style={StyleIn}>
             Answer
           </NavLink>
