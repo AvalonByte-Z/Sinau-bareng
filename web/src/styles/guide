@@ -1,8 +1,15 @@
 #FONT
 
-font: https://fonts.google.com/specimen/Raleway
+Font style: https://fonts.google.com/specimen/Raleway
+Font color: #345c7e
 
-#COLOUR
-super light blue: bee3ff
-light blue: 7dcaff
-med blue: 3ebaf6
+#COLOR
+
+Soft color
+light blue: #80C7FF
+
+Primary color (background logo)
+medium blue: #47B4F1
+
+Dark color
+font dark navy: #345c7e

@@ -17,7 +17,7 @@ const USER = {
 };
 
 const StyleNavbar = {
-  backgroundColor: "#7dcaff",
+  backgroundColor: "#47B4F1",
   padding: "0",
   minHeight: "50px",
   maxWidth: "100%"
@@ -40,7 +40,7 @@ const StyleIn = {
   fontSize: "150%",
   fontWeight: "bold",
   textAlign: "center",
-  color: "#ffffff"
+  color: "#345c7e"
 };
 
 const Home = () => (
