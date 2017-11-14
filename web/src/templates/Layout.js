@@ -7,11 +7,13 @@ import NavBar from "../organisms/NavBar";
 import Footer from "../organisms/Footer";
 
 const Layout = props => (
-  <Container>
+  <div>
     <NavBar />
-    <Content>{props.children}</Content>
+    <Container>
+      <Content>{props.children}</Content>
+    </Container>
     <Footer />
-  </Container>
+  </div>
 );
 
 export default Layout;
