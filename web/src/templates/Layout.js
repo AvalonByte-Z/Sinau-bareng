@@ -3,12 +3,12 @@ import { Container } from "reactstrap";
 
 import Content from "./Content";
 
-import NavigationBar from "../organisms/NavBar";
+import NavBar from "../organisms/NavBar";
 import Footer from "../organisms/Footer";
 
 const Layout = props => (
   <Container>
-    <NavigationBar />
+    <NavBar />
     <Content>{props.children}</Content>
     <Footer />
   </Container>
