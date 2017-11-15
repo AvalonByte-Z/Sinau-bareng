@@ -28,6 +28,9 @@ import ListProfile from "./pages/ListProfile";
 // Importing notfound pages
 import NotFound from "./pages/NotFound";
 
+//importing about pages
+import About from "./pages/About";
+
 const App = () => (
   <Router>
     <Layout>
@@ -40,6 +43,7 @@ const App = () => (
         <Route path="/listquestion/" component={ListQuestion} />
         <Route path="/profile/:id" component={Profile} />
         <Route path="/listprofile" component={ListProfile} />
+        <Route path="/about" component={About} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
