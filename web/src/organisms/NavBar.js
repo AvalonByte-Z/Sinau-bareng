@@ -54,9 +54,9 @@ const Home = () => (
             Sinau-Bareng
           </NavLink>
 
-          <NavLink to="/" style={StyleIn}>
-            <img width="40" src="./img/LogoRev2.jpeg" />
-          </NavLink>
+          {/* <NavLink to="/" style={StyleIn}>
+            <img width="40" src="../img/LogoRev2.jpeg" />
+          </NavLink> */}
 
           <NavLink to="/answer" style={StyleIn}>
             Answer
@@ -77,32 +77,6 @@ const Home = () => (
       </Row>
     </Container>
   </div>
-
-  // <nav
-  //   style={{
-  //     borderBottom: "1px solid black"
-  //   }}
-  // >
-  //   <Row>
-  //     <Col xs={4}>
-  //       <NavLink exact to="/">
-  //         Home
-  //       </NavLink>
-  //       <NavLink to="/answer">Answer Question</NavLink>
-  //     </Col>
-  //
-  //     <Col xs={4}>
-  //       <NavLink to="/">search bar</NavLink>
-  //     </Col>
-  //
-  //     <Col xs={4}>
-  //       <NavLink to="/AskQuestion">Ask Question</NavLink>
-  //       <NavLink to="/ListQuestion">[List Question]</NavLink>
-  //       <NavLink to={`/profile/${USER._id}`}>Profile</NavLink>
-  //       <NavLink to="/ListProfile">[List Profile]</NavLink>
-  //     </Col>
-  //   </Row>
-  // </nav>
 );
 
 export default Home;
