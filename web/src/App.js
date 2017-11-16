@@ -38,18 +38,16 @@ import NotFound from "./pages/NotFound";
 
 const App = () => (
   <Router>
-    <Layout>
-      <Switch>
-        <Route path="/about" component={About} />
-        <Route path="/masuk" component={SignIn} />
-        <Route path="/daftar" component={SignUp} />
-        <Route exact path="/" component={Home} />
-        <Route path="/jawab" component={Answer} />
-        <Route path="/tanya" component={Question} />
-        <Route path="/profil/:id" component={Profile} />
-        <Route component={NotFound} />
-      </Switch>
-    </Layout>
+    <Switch>
+      <Route path="/about" component={About} />
+      <Route path="/masuk" component={SignIn} />
+      <Route path="/daftar" component={SignUp} />
+      <Route exact path="/" component={Home} />
+      <Route path="/jawab" component={Answer} />
+      <Route path="/tanya" component={Question} />
+      <Route path="/profil/:id" component={Profile} />
+      <Route component={NotFound} />
+    </Switch>
   </Router>
 );
 export default App;

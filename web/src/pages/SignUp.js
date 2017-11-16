@@ -10,6 +10,7 @@ import {
   CardBody
 } from "reactstrap";
 import Logos from "../img/logo/LogoRev2.jpeg";
+import Layout from "../templates/Layout";
 
 //--------------------------------------------------------------------------------------
 

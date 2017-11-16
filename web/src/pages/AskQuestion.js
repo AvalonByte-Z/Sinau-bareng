@@ -4,9 +4,11 @@ import { Col } from "reactstrap";
 import AskBar from "../molecules/AskBar";
 
 const AskQuestion = () => (
-  <Col xs={12} lg={8}>
-    <AskBar />
-  </Col>
+  <Layout>
+    <Col xs={12} lg={8}>
+      <AskBar />
+    </Col>
+  </Layout>
 );
 
 export default AskQuestion;

@@ -7,14 +7,14 @@ import Iconhome2 from "../img/IconAbout/discussion.png";
 import Iconhome3 from "../img/IconAbout/lightbulb.png";
 
 const styleIconAbout = {
-  width: "6%",
+  width: "100%",
   marginRight: "20px"
 };
 
-const styleBackground = {
-  width: "100%",
-  height: "100%"
-};
+// const styleBackground = {
+//   width: "100%",
+//   height: "100%"
+// };
 
 const styleAbout = {
   margin: "20px",
@@ -23,18 +23,58 @@ const styleAbout = {
   color: "#345c7e"
 };
 
+const styleRow1 = {
+  margin: "auto",
+  padding: "14px",
+  fontFamily: "lato",
+  fontWeight: "bold",
+  textAlign: "center",
+  borderBottom: "solid #345c7e "
+};
+
+const styleRow2 = {
+  margin: "auto",
+  padding: "14px",
+  fontFamily: "lato",
+  fontWeight: "bold",
+  textAlign: "center"
+};
+
 const About = () => (
   <div>
-    {/* <div style={{ backgroundImage: `url(${this.state.image})` }} /> */}
-    <img src={backgroundhome} alt="backgroundhome" style={styleBackground} />
+    {/* <img src={backgroundhome} alt="backgroundhome" style={styleBackground} /> */}
 
     <div style={styleAbout}>
       <Container>
         <Row>
+          <h1 style={styleRow1}>Apasih arti SINAU?</h1>
+        </Row>
+        <br />
+        <br />
+        <Row>
+          <h4 style={styleRow2}>Kata SINAU artinya ada BELAJAR.</h4>
+        </Row>
+        <Row>
+          <h4 style={styleRow2}>
+            Di sini kamu bisa bertanya, berdiskusi dan membantu memecahkan soal
+            pelajaran di sekolah.
+          </h4>
+        </Row>
+        <Row>
+          <h4 style={styleRow2}>Belajar bareng tentunya lebih seru!</h4>
+        </Row>
+        <Row>
           <Col xs="4">
             <img src={Iconhome1} alt="icon1" style={styleIconAbout} />
+            <h4 style={styleRow2}>Tanya disini</h4>
+          </Col>
+          <Col xs="4">
             <img src={Iconhome2} alt="icon2" style={styleIconAbout} />
-            <img src={Iconhome3} alt="icon3" style={styleIconAbout} />
+            <h4 style={styleRow2}>Berdiskusi dengan yang lain</h4>
+          </Col>
+          <Col xs="4">
+            <img src={Iconhome3} alt="icon2" style={styleIconAbout} />
+            <h4 style={styleRow2}>Bagikan ilmumu</h4>
           </Col>
         </Row>
       </Container>

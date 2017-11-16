@@ -1,4 +1,10 @@
 import React from "react";
-const NotFound = () => <div>PAGE GA KETEMU</div>;
+import Layout from "../templates/Layout";
+
+const NotFound = () => (
+  <Layout>
+    <div>PAGE GA KETEMU</div>;
+  </Layout>
+);
 
 export default NotFound;
