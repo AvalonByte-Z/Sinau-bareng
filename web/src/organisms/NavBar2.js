@@ -50,30 +50,16 @@ const Home = () => (
     <Container>
       <Row>
         <Col xs={11} style={StyleNavbarLeft}>
-          {/* <NavLink to="/" style={StyleIn}>
-            {" "}
-            Sinau-Bareng
-          </NavLink> */}
-
           <a href="/">
             <img src={Logo} alt="logo" style={StyleLogo} />
           </a>
 
-          <NavLink to="/answer" style={StyleIn}>
-            Answer
+          <NavLink to="/daftar" style={StyleIn}>
+            Daftar
           </NavLink>
-          <NavLink to="/AskQuestion" style={StyleIn}>
-            Question
+          <NavLink to="/masuk" style={StyleIn}>
+            Masuk
           </NavLink>
-          <NavLink to="/answer" style={StyleIn}>
-            Category
-          </NavLink>
-        </Col>
-
-        <Col xs={1} style={StyleNavbarRight}>
-          <Button color="info" to="/answer">
-            Profile
-          </Button>{" "}
         </Col>
       </Row>
     </Container>
