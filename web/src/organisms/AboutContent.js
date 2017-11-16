@@ -10,11 +10,10 @@ import {
   Row
 } from "reactstrap";
 
-// import backgroundhome from "../img/about/backgroundhome.jpg";
-// import Iconhome1 from "../img/about/Iconhome1.png";
-// import Iconhome2 from "../img/about/Iconhome2.png";
-// import Iconhome3 from "../img/about/Iconhome3.png";
-import IconFacebook from "../img/icon/facebook.svg";
+import backgroundhome from "../img/About/backgroundhome.jpg";
+import Iconhome1 from "../img/About/Iconhome1.png";
+import Iconhome2 from "../img/About/Iconhome2.png";
+import Iconhome3 from "../img/About/Iconhome3.png";
 
 const styleIconAbout = {
   width: "6%",
@@ -26,6 +25,11 @@ const styleIcon = {
   marginRight: "20px"
 };
 
+const styleBackground = {
+  width: "100%",
+  height: "100%"
+};
+
 const styleAbout = {
   margin: "20px",
   fontFamily: "lato",
@@ -35,23 +39,16 @@ const styleAbout = {
 
 const About = () => (
   <div>
+    {/* <div style={{ backgroundImage: `url(${this.state.image})` }} /> */}
+    <img src={backgroundhome} alt="backgroundhome" style={styleBackground} />
+
     <div style={styleAbout}>
       <Container>
         <Row>
-          <Col xs="4">Copyright &copy;2017. Sinau Team.</Col>
-          <Col xs="4" />
           <Col xs="4">
-            {/* <img
-              src={backgroundhome}
-              alt="backgroundhome"
-              style={styleIconAbout}
-            />
             <img src={Iconhome1} alt="icon1" style={styleIconAbout} />
             <img src={Iconhome2} alt="icon2" style={styleIconAbout} />
-            <img src={Iconhome3} alt="icon3" style={styleIconAbout} /> */}
-            <a href="facebook.com">
-              <img src={IconFacebook} alt="facebook" style={styleIcon} />
-            </a>
+            <img src={Iconhome3} alt="icon3" style={styleIconAbout} />
           </Col>
         </Row>
       </Container>
