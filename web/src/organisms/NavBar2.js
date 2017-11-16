@@ -53,7 +53,9 @@ const Home = () => (
           <a href="/">
             <img src={Logo} alt="logo" style={StyleLogo} />
           </a>
+        </Col>
 
+        <Col xs={1} style={StyleNavbarRight}>
           <NavLink to="/daftar" style={StyleIn}>
             Daftar
           </NavLink>
