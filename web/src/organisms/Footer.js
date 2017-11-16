@@ -1,11 +1,11 @@
 import React from "react";
 import { Button, Container, Row, Col, Input } from "reactstrap";
 
-import IconFacebook from "../img/icon/facebook.svg";
-import IconInstagram from "../img/icon/instagram.svg";
-import IconSnapchat from "../img/icon/snapchat.svg";
-import IconTwitter from "../img/icon/twitter.svg";
-import IconYoutube from "../img/icon/youtube.svg";
+import IconFacebook from "../img/IconFooter/facebook.svg";
+import IconInstagram from "../img/IconFooter/instagram.svg";
+import IconSnapchat from "../img/IconFooter/snapchat.svg";
+import IconTwitter from "../img/IconFooter/twitter.svg";
+import IconYoutube from "../img/IconFooter/youtube.svg";
 
 // -----------------------------------------------------------------------------
 

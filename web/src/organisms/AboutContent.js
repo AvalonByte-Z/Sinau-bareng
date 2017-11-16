@@ -10,10 +10,10 @@ import {
   Row
 } from "reactstrap";
 
-import backgroundhome from "../img/About/backgroundhome.jpg";
-import Iconhome1 from "../img/About/Iconhome1.png";
-import Iconhome2 from "../img/About/Iconhome2.png";
-import Iconhome3 from "../img/About/Iconhome3.png";
+import backgroundhome from "../img/IconAbout/backgroundhome.jpg";
+import Iconhome1 from "../img/IconAbout/book.png";
+import Iconhome2 from "../img/IconAbout/discussion.png";
+import Iconhome3 from "../img/IconAbout/lightbulb.png";
 
 const styleIconAbout = {
   width: "6%",
