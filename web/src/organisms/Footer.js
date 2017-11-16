@@ -43,7 +43,7 @@ const styleIcon = {
 // -----------------------------------------------------------------------------
 
 const Footer = () => (
-  <div>
+  <div style={styleFooter}>
     <div style={styleFooter}>
       <Container style={styleContainer}>
         <br />

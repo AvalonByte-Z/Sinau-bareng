@@ -2,19 +2,14 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 
 import backgroundhome from "../img/IconAbout/backgroundhome.jpg";
-import Iconhome1 from "../img/IconAbout/book.png";
+import Iconhome1 from "../img/IconAbout/lightbulb.png";
 import Iconhome2 from "../img/IconAbout/discussion.png";
-import Iconhome3 from "../img/IconAbout/lightbulb.png";
+import Iconhome3 from "../img/IconAbout/book.png";
 
 const styleIconAbout = {
   width: "100%",
   marginRight: "20px"
 };
-
-// const styleBackground = {
-//   width: "100%",
-//   height: "100%"
-// };
 
 const styleAbout = {
   margin: "20px",
@@ -29,7 +24,7 @@ const styleRow1 = {
   fontFamily: "lato",
   fontWeight: "bold",
   textAlign: "center",
-  borderBottom: "solid #345c7e "
+  color: "#ffffff"
 };
 
 const styleRow2 = {
@@ -42,13 +37,14 @@ const styleRow2 = {
 
 const About = () => (
   <div>
-    {/* <img src={backgroundhome} alt="backgroundhome" style={styleBackground} /> */}
-
+    <br />
+    <br />
     <div style={styleAbout}>
       <Container>
         <Row>
           <h1 style={styleRow1}>Apasih arti SINAU?</h1>
         </Row>
+        <br />
         <br />
         <br />
         <Row>
@@ -65,16 +61,16 @@ const About = () => (
         </Row>
         <Row>
           <Col xs="4">
-            <img src={Iconhome1} alt="icon1" style={styleIconAbout} />
-            <h4 style={styleRow2}>Tanya disini</h4>
+            <img src={Iconhome1} alt="icon2" style={styleIconAbout} />
+            <h4 style={styleRow1}>Tanya disini</h4>
           </Col>
           <Col xs="4">
             <img src={Iconhome2} alt="icon2" style={styleIconAbout} />
-            <h4 style={styleRow2}>Berdiskusi dengan yang lain</h4>
+            <h4 style={styleRow1}>Berdiskusi dengan yang lain</h4>
           </Col>
           <Col xs="4">
-            <img src={Iconhome3} alt="icon2" style={styleIconAbout} />
-            <h4 style={styleRow2}>Bagikan ilmumu</h4>
+            <img src={Iconhome3} alt="icon1" style={styleIconAbout} />
+            <h4 style={styleRow1}>Bagikan ilmumu</h4>
           </Col>
         </Row>
       </Container>
