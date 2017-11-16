@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import Logo from "../img/logo/LogoRev2.jpeg";
+
 import {
   Row,
   Col,
@@ -24,16 +26,15 @@ const StyleNavbar = {
 };
 
 const StyleNavbarLeft = {
-  padding: "0",
+  padding: "10",
   fontSize: "90%",
   marginTop: "10px"
 };
 
 const StyleNavbarRight = {
-  padding: "0",
+  padding: "10",
   fontSize: "90%",
-  marginTop: "5px",
-  float: "right"
+  marginTop: "10px"
 };
 
 const StyleIn = {
@@ -44,19 +45,24 @@ const StyleIn = {
   color: "#345c7e"
 };
 
+const StyleLogo = {
+  width: "10%",
+  height: "100%"
+};
+
 const Home = () => (
   <div style={StyleNavbar}>
     <Container>
       <Row>
         <Col xs={11} style={StyleNavbarLeft}>
-          <NavLink to="/" style={StyleIn}>
+          {/* <NavLink to="/" style={StyleIn}>
             {" "}
             Sinau-Bareng
-          </NavLink>
-
-          {/* <NavLink to="/" style={StyleIn}>
-            <img width="40" src="../img/LogoRev2.jpeg" />
           </NavLink> */}
+
+          <a href="/">
+            <img src={Logo} alt="logo" style={StyleLogo} />
+          </a>
 
           <NavLink to="/answer" style={StyleIn}>
             Answer
