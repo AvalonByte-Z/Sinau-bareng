@@ -1,12 +1,12 @@
 import React from "react";
 
 import AboutContent from "../organisms/AboutContent";
-import Layout from "../templates/Layout";
+import LayoutAbout from "../templates/LayoutAbout";
 
 const Home = () => (
-  <Layout>
+  <LayoutAbout>
     <AboutContent />
-  </Layout>
+  </LayoutAbout>
 );
 
 export default Home;
