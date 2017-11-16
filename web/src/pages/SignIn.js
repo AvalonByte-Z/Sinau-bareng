@@ -69,50 +69,10 @@ const Logo = () => (
 
 const Tagline = () => <h2 style={styleTest}>Diskusikan pelajaranmu disini</h2>;
 
-// COLUMN_SIGNUP
-
-const ColumnSignup = () => (
-  <Col xs={6}>
-    <CardBody>
-      <h3>Sign Up</h3>
-      <Form style={styleForm}>
-        <FormGroup>
-          <Label for="signupFullName">Full Name</Label>
-          <Input
-            type="email"
-            name="signupFullName"
-            id="signupFullName"
-            placeholder="Enter your fullname here"
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="signupEmail">Email</Label>
-          <Input
-            type="email"
-            name="signupEmail"
-            id="signupEmail"
-            placeholder="Enter your email here"
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="signupPassword">Password</Label>
-          <Input
-            type="password"
-            name="signupPassword"
-            id="signupPassword"
-            placeholder="Enter your password here"
-          />
-        </FormGroup>
-        <Button>Sign Up</Button>
-      </Form>
-    </CardBody>
-  </Col>
-);
-
 // COLUMN_LOGIN
 
 const ColumnLogin = () => (
-  <Col xs={6}>
+  <Col xs={12}>
     <CardBody>
       <h3>Login</h3>
       <Form style={styleForm}>
@@ -147,7 +107,7 @@ const ColumnLogin = () => (
 
 // LOGIN
 
-const Login = () => (
+const SignIn = () => (
   <div>
     <Row className="text-center" id="row-logo">
       <Col>
@@ -164,9 +124,8 @@ const Login = () => (
     <hr />
 
     <Row className="center" id="row-auth">
-      <ColumnSignup />
       <ColumnLogin />
     </Row>
   </div>
 );
-export default Login;
+export default SignIn;

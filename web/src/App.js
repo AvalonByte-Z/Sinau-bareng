@@ -7,8 +7,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Importing layout
 import Layout from "./templates/Layout";
 
-// Importing login pages
-import Login from "./pages/Login";
+//importing about pages
+import About from "./pages/About";
+
+// Importing masuk pages
+import SignIn from "./pages/SignIn";
+
+// Importing daftar pages
+import SignUp from "./pages/SignUp";
 
 // Importing home pages
 import Home from "./pages/Home";
@@ -28,22 +34,17 @@ import ListProfile from "./pages/ListProfile";
 // Importing notfound pages
 import NotFound from "./pages/NotFound";
 
-//importing about pages
-import About from "./pages/About";
-
 const App = () => (
   <Router>
     <Layout>
       <Switch>
-        <Route path="/login" component={Login} />
-        <Route exact path="/" component={Home} />
-        <Route path="/answer" component={Answer} />
-        <Route path="/question" component={Question} />
-        <Route path="/askquestion/" component={AskQuestion} />
-        <Route path="/listquestion/" component={ListQuestion} />
-        <Route path="/profile/:id" component={Profile} />
-        <Route path="/listprofile" component={ListProfile} />
         <Route path="/about" component={About} />
+        <Route path="/masuk" component={SignIn} />
+        <Route path="/daftar" component={SignUp} />
+        <Route exact path="/" component={Home} />
+        <Route path="/jawab" component={Answer} />
+        <Route path="/tanya" component={Question} />
+        <Route path="/profil/:id" component={Profile} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
