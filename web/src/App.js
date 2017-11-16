@@ -24,12 +24,14 @@ import Answer from "./pages/Answer";
 
 // Importing question pages
 import Question from "./pages/Question";
-import AskQuestion from "./pages/AskQuestion";
-import ListQuestion from "./pages/ListQuestion";
+
+// import AskQuestion from "./pages/AskQuestion";
+// import ListQuestion from "./pages/ListQuestion";
 
 // Importing profile pages
 import Profile from "./pages/Profile";
-import ListProfile from "./pages/ListProfile";
+
+// import ListProfile from "./pages/ListProfile";
 
 // Importing notfound pages
 import NotFound from "./pages/NotFound";

@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Col,
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-  Container,
-  Row
-} from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 
 import backgroundhome from "../img/IconAbout/backgroundhome.jpg";
 import Iconhome1 from "../img/IconAbout/book.png";
@@ -16,11 +7,6 @@ import Iconhome2 from "../img/IconAbout/discussion.png";
 import Iconhome3 from "../img/IconAbout/lightbulb.png";
 
 const styleIconAbout = {
-  width: "6%",
-  marginRight: "20px"
-};
-
-const styleIcon = {
   width: "6%",
   marginRight: "20px"
 };

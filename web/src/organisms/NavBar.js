@@ -3,15 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import Logo from "../img/logo/LogoRev2.jpeg";
 
-import {
-  Row,
-  Col,
-  Navbar,
-  Button,
-  Container,
-  Breadcrumb,
-  BreadcrumbItem
-} from "reactstrap";
+import { Row, Col, Button, Container } from "reactstrap";
 
 const StyleNavbar = {
   backgroundColor: "#47B4F1",

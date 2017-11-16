@@ -9,7 +9,6 @@ import {
   Input,
   CardBody
 } from "reactstrap";
-import { Link } from "react-router-dom";
 import Logos from "../img/logo/LogoRev2.jpeg";
 
 //--------------------------------------------------------------------------------------
@@ -24,32 +23,6 @@ const styleForm = {
   height: "350px"
 };
 
-const styleInput = {
-  border: "none",
-  borderBottom: "1px solid #CFD8DC"
-};
-
-const styleButton = {
-  width: "90%",
-  position: "absolute",
-  bottom: "10px"
-};
-
-const styleText = {
-  fontFamily: "lato",
-  width: "80%",
-  fontSize: "16px",
-  margin: "0px auto"
-};
-
-const styleHead = {
-  fontFamily: "raleway",
-  fontSize: "16px",
-  margin: "0px",
-  fontWeight: "bold",
-  borderBottom: "solid #1DE9B6",
-  marginRight: "240px"
-};
 const styleTest = {
   fontFamily: "raleway"
 };
