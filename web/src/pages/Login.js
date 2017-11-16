@@ -1,17 +1,25 @@
 import React from "react";
 import { Row, Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { Link } from "react-router-dom";
+import Logos from "../img/logo/LogoRev2.jpeg";
+
+const StyleLogo = {
+  width: "50%",
+  height: "100%"
+};
 
 // LOGO
 const Logo = () => (
   <h1>
-    <img src="../img/sinau.png" alt="LOGO" />
+    <a href="/">
+      <img src={Logos} alt="logo" style={StyleLogo} />
+    </a>{" "}
   </h1>
 );
 
 //HEADER
 
-const Tagline = () => <h2>TAGLINE AND DESCRIPTION</h2>;
+const Tagline = () => <h2>Diskusikan pelajaranmu disini</h2>;
 
 // COLUMN_SIGNUP
 
