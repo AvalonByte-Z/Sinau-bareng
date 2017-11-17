@@ -65,7 +65,7 @@ const ColumnSignup = () => (
             type="email"
             name="signupEmail"
             id="signupEmail"
-            placeholder="Enter your email here"
+            placeholder="Enter your email heree"
           />
         </FormGroup>
         <FormGroup>
@@ -86,24 +86,26 @@ const ColumnSignup = () => (
 // LOGIN
 
 const SignUp = () => (
-  <div>
-    <Row className="text-center" id="row-logo">
-      <Col>
-        <Logo />
-      </Col>
-    </Row>
+  <Layout>
+    <div>
+      <Row className="text-center" id="row-logo">
+        <Col>
+          <Logo />
+        </Col>
+      </Row>
 
-    <Row className="text-center" id="row-tagline">
-      <Col>
-        <Tagline />
-      </Col>
-    </Row>
+      <Row className="text-center" id="row-tagline">
+        <Col>
+          <Tagline />
+        </Col>
+      </Row>
 
-    <hr />
+      <hr />
 
-    <Row className="center" id="row-auth">
-      <ColumnSignup />
-    </Row>
-  </div>
+      <Row className="center" id="row-auth">
+        <ColumnSignup />
+      </Row>
+    </div>
+  </Layout>
 );
 export default SignUp;

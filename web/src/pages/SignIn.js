@@ -29,6 +29,12 @@ const styleTest = {
   fontFamily: "raleway"
 };
 
+const styleButton = {
+  width: "90%",
+  position: "absolute",
+  bottom: "10px"
+};
+
 //--------------------------------------------------------------------------------------
 
 // LOGO
@@ -74,7 +80,19 @@ const ColumnLogin = () => (
           <Link to="/forgot">Forgot password?</Link>
         </FormGroup>
         <br />
-        <Button>Login</Button>
+        <br />
+        <Row>
+          <Col xs={6}>
+            <Button style={styleButton} color="success">
+              Login
+            </Button>
+          </Col>
+          <Col xs={6}>
+            <Button style={styleButton} color="success">
+              Daftar
+            </Button>
+          </Col>
+        </Row>
       </Form>
     </CardBody>
   </Col>
