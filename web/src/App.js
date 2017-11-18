@@ -1,7 +1,7 @@
 // Importing react
 import React from "react";
 
-// Importing router
+// Importing route
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Importing layout
