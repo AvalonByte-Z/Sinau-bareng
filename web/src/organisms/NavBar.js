@@ -8,7 +8,7 @@ import { Row, Col, Button, Container } from "reactstrap";
 const StyleNavbar = {
   backgroundColor: "#47B4F1",
   padding: "0",
-  minHeight: "50px",
+  minHeight: "75px",
   maxWidth: "100%"
 };
 
@@ -25,10 +25,19 @@ const StyleNavbarRight = {
 };
 
 const StyleIn = {
-  marginRight: "50px",
-  fontSize: "150%",
-  fontWeight: "bold",
-  textAlign: "center",
+  fontFamily: "raleway",
+  marginTop: "20px",
+  marginRight: "30px",
+  padding: "10",
+  fontSize: "30px",
+  color: "#345c7e"
+};
+
+const StyleButton = {
+  fontFamily: "raleway",
+  marginLeft: "30px",
+  padding: "10",
+  fontSize: "20px",
   color: "#345c7e"
 };
 
@@ -48,7 +57,7 @@ const Home = () => (
           </a>
 
           <NavLink to="/answer" style={StyleIn}>
-            Answer
+               Answer
           </NavLink>
           <NavLink to="/AskQuestion" style={StyleIn}>
             Question
@@ -59,9 +68,9 @@ const Home = () => (
         </Col>
 
         <Col xs={1} style={StyleNavbarRight}>
-          <Button color="info" to="/answer">
+          <Button color="info" to="/answer" style={StyleButton}>
             Profile
-          </Button>{" "}
+          </Button>
         </Col>
       </Row>
     </Container>

@@ -15,7 +15,9 @@ const styleBackground = {
 const Layout = props => (
   <div style={styleBackground}>
     <NavBarAbout />
+    <Container>
       <Content>{props.children}</Content>
+    </Container>
     <Footer />
   </div>
 );
