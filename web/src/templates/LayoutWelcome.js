@@ -5,7 +5,7 @@ import Content from "./Content";
 
 import backgroundAbout from "../img/IconAbout/backgroundhome.jpg";
 
-import NavBarAbout from "../organisms/NavBar";
+import NavBarWelcome from "../organisms/NavBarWelcome";
 import Footer from "../organisms/Footer";
 
 const styleBackground = {
@@ -14,7 +14,7 @@ const styleBackground = {
 
 const Layout = props => (
   <div style={styleBackground}>
-    <NavBarAbout />
+    <NavBarWelcome />
     <Container>
       <Content>{props.children}</Content>
     </Container>

@@ -56,19 +56,21 @@ const Home = () => (
             <img src={Logo} alt="logo" style={StyleLogo} />
           </a>
 
-          <NavLink to="/answer" style={StyleIn}>
-               Answer
+          <NavLink to="/" style={StyleIn}>
+            Home
           </NavLink>
-          <NavLink to="/AskQuestion" style={StyleIn}>
+          
+          <NavLink to="/tanya" style={StyleIn}>
+            Answer
+          </NavLink>
+          <NavLink to="/jawab" style={StyleIn}>
             Question
           </NavLink>
-          <NavLink to="/answer" style={StyleIn}>
-            Category
-          </NavLink>
+
         </Col>
 
         <Col xs={1} style={StyleNavbarRight}>
-          <Button color="info" to="/answer" style={StyleButton}>
+          <Button color="info" to="/profil" style={StyleButton}>
             Profile
           </Button>
         </Col>

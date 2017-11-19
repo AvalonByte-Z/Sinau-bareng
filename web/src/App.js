@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./templates/Layout";
 
 //importing about pages
-import About from "./pages/About";
+import Welcome from "./pages/Welcome";
 
 // Importing masuk pages
 import SignIn from "./pages/SignIn";
@@ -39,7 +39,7 @@ import NotFound from "./pages/NotFound";
 const App = () => (
   <Router>
     <Switch>
-      <Route path="/about" component={About} />
+      <Route path="/welcome" component={Welcome} />
       <Route path="/masuk" component={SignIn} />
       <Route path="/daftar" component={SignUp} />
       <Route exact path="/" component={Home} />

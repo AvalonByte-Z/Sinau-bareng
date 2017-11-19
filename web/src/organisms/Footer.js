@@ -35,7 +35,9 @@ const styleFootDown = {
   fontFamily: "lato",
   fontSize: "90%",
   color: "#345c7e",
-  minHeight: "25px"
+  minHeight: "25px",
+  backgroundColor: "#ffffff"
+
 };
 
 const styleIcon = {
