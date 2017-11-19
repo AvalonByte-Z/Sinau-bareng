@@ -34,15 +34,14 @@ marginRight: "100px"
 };
 
 const Home = () => (
-  <Layout>
+  <Layout>      
+    <div style={div1}>
     <Row>
-      <Col xs={8}>
-        <ListOfAnswers />;
-      </Col>
-      <Col xs={4}>
-        <Category />
-      </Col>
+    <Col style={div3}><ListOfAnswers />;</Col>
+    <Category />
     </Row>
+  </div>
+
   </Layout>
 );
 

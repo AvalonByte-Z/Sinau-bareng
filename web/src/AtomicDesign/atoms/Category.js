@@ -17,7 +17,7 @@ import Sejarah from "../img/IconCategory/color/sejarah.png";
 // STYLING_CSS ---------------------------------------------------
 
 const styleHead = {
-  fontFamily: "raleway",
+  fontFamily: "lato",
   fontSize: "16px",
   margin: "0px",
   marginRight: "86%",
@@ -28,8 +28,7 @@ const styleHead = {
 
 const styleLi = {
   padding: "5px",
-  marginBottom: "15px",
-  fontSize: "16px"
+  marginBottom: "15px"
 };
 
 const styleCol = {
@@ -52,6 +51,7 @@ const StyleLogo = {
   height: "10%",
   padding: "5px",
   color: "#ffffff",
+  fontFamily: "lato",
   borderRadius: "10px",
   marginRight: "25px"
 
