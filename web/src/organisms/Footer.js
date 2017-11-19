@@ -10,7 +10,8 @@ import IconYoutube from "../img/IconFooter/youtube.svg";
 // -----------------------------------------------------------------------------
 
 const styleFooter = {
-  backgroundColor: "#47B4F1"
+  backgroundColor: "#47B4F1",
+  minHeight: "250px"
 };
 
 const styleContainer = {
@@ -25,57 +26,65 @@ const styleFootCaption = {
   fontFamily: "lato",
   fontWeight: "bold",
   textAlign: "center",
-  color: "#345c7e"
+  color: "#ffffff",
+  borderBottom: "solid #345c7e"
 };
 
 const styleFootDown = {
   margin: "20px",
   fontFamily: "lato",
   fontSize: "90%",
-  color: "#345c7e"
+  color: "#345c7e",
+  minHeight: "25px"
 };
 
 const styleIcon = {
-  width: "6%",
+  width: "24px",
   marginRight: "20px"
 };
 
 // -----------------------------------------------------------------------------
 
 const Footer = () => (
-  <div style={styleFooter}>
+  <div>
     <div style={styleFooter}>
       <Container style={styleContainer}>
-        <br />
+        <Row><br/></Row>
         <Row>
           <h3 style={styleFootCaption}>Sinau-Bareng</h3>
         </Row>
 
-        <br />
-        <Container>
-          <Row>
-            <Col xs="1" />
-            <Col xs="4">
-              <p>
-                Home <br />
-                About <br />
-                Features <br />
-                Our teams <br />
-                Contact us <br />
-              </p>
-            </Col>
-            <Col xs="2" />
-            <Col xs="4">
-              <h5>Get Our Latest information</h5>
-              <Input type="type" name="select" id="exampleSelect" />{" "}
-              <Button color="info"> Subscribe </Button>
-              <br />
-              <br />
-            </Col>
-          </Row>
-        </Container>
+        <Row><br/></Row>
+        <Row><br/></Row>
+        <Row><br/></Row>
+
+        <Row>
+          <Col xs="2" />
+          <Col xs="4">
+            <p>
+              Home <br />
+              About <br />
+              Features <br />
+              Our teams <br />
+              Contact us <br />
+            </p>
+          </Col>
+          <Col xs="4">
+            <h5>Get Our Latest information</h5>
+            <Input type="type" name="select" id="exampleSelect" />{" "}
+            <Button color="info"> Subscribe </Button>
+            <br />
+            <br />
+          </Col>
+          <Col xs="2" />
+        </Row>
+
+        <Row><br/></Row>
+        <Row><br/></Row>
+
       </Container>
     </div>
+
     <div style={styleFootDown}>
       <Container>
         <Row>
@@ -101,9 +110,6 @@ const Footer = () => (
         </Row>
       </Container>
     </div>
-    <row>
-      <br />
-    </row>
   </div>
 );
 

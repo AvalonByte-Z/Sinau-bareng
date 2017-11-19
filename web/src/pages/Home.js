@@ -35,15 +35,17 @@ marginRight: "100px"
 
 const Home = () => (
   <Layout>
-    <Row>
-      <Col xs={8}>
+      <Col xs={9}>
         <ListOfAnswers />;
       </Col>
-      <Col xs={4}>
+      <Col xs={3}>
         <Category />
       </Col>
-    </Row>
   </Layout>
 );
+
+<Row>
+
+</Row>
 
 export default Home;
