@@ -2,6 +2,18 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
+
+import BIndo from "../img/IconCategory/color/bahasaIndonesia.png";
+import BInggris from "../img/IconCategory/color/bahasaInggris.png";
+import Biologi from "../img/IconCategory/color/biologi.png";
+import Ekonomi from "../img/IconCategory/color/ekonomi.png";
+import Fisika from "../img/IconCategory/color/fisika.png";
+import Geografi from "../img/IconCategory/color/geografi.png";
+import Kimia from "../img/IconCategory/color/kimia.png";
+import Math from "../img/IconCategory/color/math.png";
+import Sejarah from "../img/IconCategory/color/sejarah.png";
+
+
 // STYLING_CSS ---------------------------------------------------
 
 const styleHead = {
@@ -34,94 +46,15 @@ const IconCategory = {
   marginRight: "25px"
 };
 
-const IconCategory1 = {
-  backgroundColor: "#C8E6C9",
+const StyleLogo = {
+  width: "10%",
+  height: "10%",
   padding: "5px",
   color: "#ffffff",
   fontFamily: "lato",
   borderRadius: "10px",
   marginRight: "25px"
-};
 
-const IconCategory2 = {
-  backgroundColor: "#FFCDD2",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory3 = {
-  backgroundColor: "#E1BEE7",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory4 = {
-  backgroundColor: "#CFD8DC",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory5 = {
-  backgroundColor: "#BCAAA4",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory6 = {
-  backgroundColor: "#B3E5FC",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory7 = {
-  backgroundColor: "#84FFFF",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory8 = {
-  backgroundColor: "#EA80FC",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory9 = {
-  backgroundColor: "#CFD8DC",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
-};
-
-const IconCategory10 = {
-  backgroundColor: "#E1BEE7",
-  padding: "5px",
-  color: "#ffffff",
-  fontFamily: "lato",
-  borderRadius: "10px",
-  marginRight: "25px"
 };
 
 // Category
@@ -130,64 +63,76 @@ const Category = () => (
   <div>
     <h5 style={styleHead}> CATEGORIES </h5>
     <div style={styleCol}>
+
+      {/* // Category B.indo */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory1}> W </span>
-          WORKSHOP
+        <NavLink exact to="/masuk">
+          <img src={BIndo} alt="logo" style={StyleLogo} />
+          Bahasa Indonesia
         </NavLink>
       </li>
+
+      {/* // Category B.inggris */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory2}> S </span>
-          SEMINAR & TRAINING
+        <NavLink exact to="/masuk">
+          <img src={BInggris} alt="logo" style={StyleLogo} />
+          Bahasa Inggris
         </NavLink>
       </li>
+
+      {/* // Category Biologi */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory3}> D </span>
-          DESIGN EVENT
+        <NavLink exact to="/masuk">
+          <img src={Biologi} alt="logo" style={StyleLogo} />
+          biologi
         </NavLink>
       </li>
+
+      {/* // Category Ekonomi */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory4}> T</span>
-          TECHTALK
+        <NavLink exact to="/masuk">
+          <img src={Ekonomi} alt="logo" style={StyleLogo} />
+          Ekonomi
         </NavLink>
       </li>
+
+      {/* // Category fisika */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory5}> F </span>
-          FUN GAME & SPORT
+        <NavLink exact to="/masuk">
+          <img src={Fisika} alt="logo" style={StyleLogo} />
+          Fisika
         </NavLink>
       </li>
+
+      {/* // Category Geografi */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory6}> P </span>
-          PHOTOGRAPHY
+        <NavLink exact to="/masuk">
+          <img src={Geografi} alt="logo" style={StyleLogo} />
+          Geografi
         </NavLink>
       </li>
+
+      {/* // Category Kimia */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory7}> C </span>
-          COMPETITION
+        <NavLink exact to="/masuk">
+          <img src={Kimia} alt="logo" style={StyleLogo} />
+          Kimia
         </NavLink>
       </li>
+
+      {/* // Category Mathematics */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory8}> A </span>
-          ART & CULTURE
+        <NavLink exact to="/masuk">
+          <img src={Math} alt="logo" style={StyleLogo} />
+          Math
         </NavLink>
       </li>
+
+      {/* // Category Sejarah */}
       <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory9}> R </span>
-          RELIGION
-        </NavLink>
-      </li>
-      <li style={styleLi}>
-        <NavLink exact to="/">
-          <span style={IconCategory10}> T </span>
-          TRAVELLING
+        <NavLink exact to="/masuk">
+          <img src={Sejarah} alt="logo" style={StyleLogo} />
+          Sejarah
         </NavLink>
       </li>
     </div>
