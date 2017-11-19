@@ -42,10 +42,6 @@ const Home = () => (
     <Container>
       <Row>
         <Col xs={11} style={StyleNavbarLeft}>
-          {/* <NavLink to="/" style={StyleIn}>
-            {" "}
-            Sinau-Bareng
-          </NavLink> */}
 
           <a href="/">
             <img src={Logo} alt="logo" style={StyleLogo} />

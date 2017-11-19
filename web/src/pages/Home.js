@@ -34,8 +34,7 @@ marginRight: "100px"
 };
 
 const Home = () => (
-  <Layout>
-    
+  <Layout>      
     <div style={div1}>
     <Row>
     <Col style={div3}><ListOfAnswers />;</Col>
