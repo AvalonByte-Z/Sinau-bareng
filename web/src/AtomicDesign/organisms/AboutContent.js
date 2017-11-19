@@ -39,8 +39,9 @@ const About = () => (
   <div>
     <br />
     <br />
+    <br />
+    <br />
     <div style={styleAbout}>
-      <Container>
         <Row>
           <h1 style={styleRow1}>Apasih arti SINAU?</h1>
         </Row>
@@ -48,32 +49,41 @@ const About = () => (
         <br />
         <br />
         <Row>
-          <h4 style={styleRow2}>Kata SINAU artinya ada BELAJAR.</h4>
+          <h2 style={styleRow2}>Kata SINAU artinya ada BELAJAR.</h2>
         </Row>
         <Row>
-          <h4 style={styleRow2}>
+          <h2 style={styleRow2}>
             Di sini kamu bisa bertanya, berdiskusi dan membantu memecahkan soal
             pelajaran di sekolah.
-          </h4>
+          </h2>
         </Row>
         <Row>
-          <h4 style={styleRow2}>Belajar bareng tentunya lebih seru!</h4>
+          <h2 style={styleRow2}>Belajar bareng tentunya lebih seru!</h2>
         </Row>
+
+
+        <br/>
+        <br/>
         <Row>
           <Col xs="4">
             <img src={Iconhome1} alt="icon2" style={styleIconAbout} />
-            <h4 style={styleRow1}>Tanya disini</h4>
+            <br/>
+            <br/>
+            <h2 style={styleRow1}>Tanya disini</h2>
           </Col>
           <Col xs="4">
             <img src={Iconhome2} alt="icon2" style={styleIconAbout} />
-            <h4 style={styleRow1}>Berdiskusi dengan yang lain</h4>
+            <br/>
+            <br/>
+            <h2 style={styleRow1}>Berdiskusi dengan yang lain</h2>
           </Col>
           <Col xs="4">
             <img src={Iconhome3} alt="icon1" style={styleIconAbout} />
-            <h4 style={styleRow1}>Bagikan ilmumu</h4>
+            <br/>
+            <br/>
+            <h2 style={styleRow1}>Bagikan ilmumu</h2>
           </Col>
         </Row>
-      </Container>
     </div>
     <row>
       <br />
