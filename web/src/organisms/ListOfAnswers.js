@@ -10,6 +10,8 @@ import {
 
 import LinkToQuestion from "../atoms/LinkToQuestion";
 import LinkToProfile from "../atoms/LinkToProfile";
+import upButton from "../molecules/upButton"
+
 
 import DATAQUESTIONS from "../data/questions";
 
@@ -32,6 +34,7 @@ const CardAnswer = props => (
         </h6>
       </CardSubtitle>
       <CardText>{props.question.answers[0].text}</CardText>
+      <upButton upButton={props.upButton}/>  
     </CardBody>
   </Card>
 );

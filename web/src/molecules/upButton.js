@@ -8,7 +8,7 @@ class upButton extends React.Component {
   }
   update(){
     ReactDOM.render(
-      <App val={this.props.val + 1} />,
+      <upButton val={this.props.val + 1} />,
       document.getElementById('root'))
   }
   componentWillReceiveProps(nextProps){
@@ -30,9 +30,9 @@ class upButton extends React.Component {
   }
 }
 
-App.defaultProps = {val: 0}
+upButton.defaultProps = {val: 0}
 
 ReactDOM.render(
-  <App />,
+  <upButton />,
   document.getElementById('root')
 );
