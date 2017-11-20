@@ -47,86 +47,15 @@ const StyleLogo = {
 
 // Category
 
-const Category = () => (
+const TopQuestions = () => (
   <div>
     <h5 style={styleHead}> Top Questions </h5>
     <div style={styleCol}>
 
-      {/* // Category B.indo */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={BIndo} alt="logo" style={StyleLogo} />
-          Bahasa Indonesia
-        </NavLink>
-      </li>
-
-      {/* // Category B.inggris */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={BInggris} alt="logo" style={StyleLogo} />
-          Bahasa Inggris
-        </NavLink>
-      </li>
-
-      {/* // Category Biologi */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Biologi} alt="logo" style={StyleLogo} />
-          biologi
-        </NavLink>
-      </li>
-
-      {/* // Category Ekonomi */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Ekonomi} alt="logo" style={StyleLogo} />
-          Ekonomi
-        </NavLink>
-      </li>
-
-      {/* // Category fisika */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Fisika} alt="logo" style={StyleLogo} />
-          Fisika
-        </NavLink>
-      </li>
-
-      {/* // Category Geografi */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Geografi} alt="logo" style={StyleLogo} />
-          Geografi
-        </NavLink>
-      </li>
-
-      {/* // Category Kimia */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Kimia} alt="logo" style={StyleLogo} />
-          Kimia
-        </NavLink>
-      </li>
-
-      {/* // Category Mathematics */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Math} alt="logo" style={StyleLogo} />
-          Math
-        </NavLink>
-      </li>
-
-      {/* // Category Sejarah */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Sejarah} alt="logo" style={StyleLogo} />
-          Sejarah
-        </NavLink>
-      </li>
     </div>
   </div>
 );
 
 // POST
 
-export default Category;
+export default TopQuestions;
