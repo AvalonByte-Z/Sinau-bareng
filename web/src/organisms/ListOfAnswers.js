@@ -1,11 +1,6 @@
 import React from "react";
 import {
-  Col,
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText
+  Col
 } from "reactstrap";
 
 import CardAnswer from "../molecules/CardAnswer"

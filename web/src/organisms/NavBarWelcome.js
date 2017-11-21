@@ -5,12 +5,8 @@ import Logo from "../img/logo/LogoRev2.jpeg";
 
 import {
   Row,
-  Col,
-  Navbar,
-  Button,
-  Container,
-  Breadcrumb,
-  BreadcrumbItem
+  Col,  
+  Container
 } from "reactstrap";
 
 const StyleNavbar = {

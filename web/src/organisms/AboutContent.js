@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 
-import backgroundhome from "../img/IconAbout/backgroundhome.jpg";
 import Iconhome1 from "../img/IconAbout/lightbulb.png";
 import Iconhome2 from "../img/IconAbout/discussion.png";
 import Iconhome3 from "../img/IconAbout/book.png";

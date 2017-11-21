@@ -4,9 +4,6 @@ import React from "react";
 // Importing route
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Importing layout
-import Layout from "./templates/Layout";
-
 //importing about pages
 import Welcome from "./pages/Welcome";
 
@@ -20,7 +17,7 @@ import Home from "./pages/Home";
 import Answer from "./pages/Answer";
 
 // Importing question pages
-import Question from "./pages/Question";
+// import Question from "./pages/Question";
 
 // Importing AskQuestion pages
 import AskQuestion from "./pages/AskQuestion";
@@ -38,9 +35,9 @@ import NotFound from "./pages/NotFound";
 const App = () => (
   <Router>
     <Switch>
-      <Route path="/welcome" component={Welcome} />
       <Route path="/SignIn" component={SignIn} />
       <Route exact path="/" component={Welcome} />
+      <Route path="/home" component={Home} />
       <Route path="/Answer" component={Answer} />
       <Route path="/AskQuestion" component={AskQuestion} />
       <Route path="/profile/:id" component={Profile} />

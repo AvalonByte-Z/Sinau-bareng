@@ -5,7 +5,7 @@ import Dropdown from "../atoms/Dropdown";
 
 import Logo from "../img/logo/LogoRev2.jpeg";
 
-import { Row, Col, Button, Container } from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 
 const StyleNavbar = {
   backgroundColor: "#47B4F1",
@@ -32,14 +32,6 @@ const StyleIn = {
   marginRight: "30px",
   padding: "10",
   fontSize: "30px",
-  color: "#345c7e"
-};
-
-const StyleButton = {
-  fontFamily: "raleway",
-  marginLeft: "30px",
-  padding: "10",
-  fontSize: "20px",
   color: "#345c7e"
 };
 
