@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import Logos from "../img/logo/LogoRev2.jpeg";
-import Layout from "../templates/Layout";
+import LayoutSignIn from "../templates/LayoutSignIn";
 
 //--------------------------------------------------------------------------------------
 
@@ -138,7 +138,7 @@ const ColumnSignup = () => (
 // LOGIN
 
 const SignIn = () => (
-  <Layout>
+  <LayoutSignIn>
     <div>
       <Row className="text-center" id="row-logo">
         <Col>
@@ -160,11 +160,11 @@ const SignIn = () => (
         </Col>
 
         <Col xs={6}>
-          <ColumnSignup />  
+          <ColumnSignup />
         </Col>
 
       </Row>
     </div>
-  </Layout>
+  </LayoutSignIn>
 );
 export default SignIn;

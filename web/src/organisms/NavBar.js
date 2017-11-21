@@ -46,11 +46,11 @@ const Home = () => (
       <Row>
         <Col xs={11} style={StyleNavbarLeft}>
 
-          <a href="/">
+          <a href="/home">
             <img src={Logo} alt="logo" style={StyleLogo} />
           </a>
 
-          <NavLink to="/" style={StyleIn}>
+          <NavLink to="/home" style={StyleIn}>
             Home
           </NavLink>
 
