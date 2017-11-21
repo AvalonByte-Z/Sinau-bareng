@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavLink } from "reactstrap";
 
 // STYLING_CSS ---------------------------------------------------
 
@@ -49,10 +49,20 @@ const StyleLogo = {
 
 const TopQuestions = () => (
   <div>
-    <h5 style={styleHead}> Top Questions </h5>
-    <div style={styleCol}>
+    <div className="d-flex flex-column left">
+      <h5 style={styleHead}> Top Questions </h5>
+      <div className="p-2">
+        <NavLink href="#">Rank 1</NavLink>
+  		</div>
 
-    </div>
+  		<div className="p-2">
+        <NavLink href="#">Rank 2</NavLink>
+  		</div>
+
+  		<div className="p-2">
+        <NavLink href="#">Rank 3</NavLink>
+  		</div>
+  	</div>
   </div>
 );
 

@@ -3,7 +3,7 @@ import Layout from "../templates/Layout";
 
 const NotFound = () => (
   <Layout>
-    <div>PAGE GA KETEMU</div>;
+    <div>PAGE TIDAK KETEMU</div>;
   </Layout>
 );
 
