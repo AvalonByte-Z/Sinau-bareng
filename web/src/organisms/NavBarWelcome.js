@@ -49,18 +49,15 @@ const Home = () => (
   <div style={StyleNavbar}>
     <Container>
       <Row>
-        <Col xs={11} style={StyleNavbarLeft}>
+        <Col xs={9} style={StyleNavbarLeft}>
           <a href="/">
             <img src={Logo} alt="logo" style={StyleLogo} />
           </a>
         </Col>
 
-        <Col xs={1} style={StyleNavbarRight}>
-          <NavLink to="/daftar" style={StyleIn}>
-            Daftar
-          </NavLink>
-          <NavLink to="/masuk" style={StyleIn}>
-            Masuk
+        <Col xs={3} style={StyleNavbarRight}>
+          <NavLink to="/signin" style={StyleIn}>
+            Masuk / Daftar
           </NavLink>
         </Col>
       </Row>

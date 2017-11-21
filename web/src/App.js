@@ -40,7 +40,7 @@ const App = () => (
     <Switch>
       <Route path="/welcome" component={Welcome} />
       <Route path="/SignIn" component={SignIn} />
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Welcome} />
       <Route path="/Answer" component={Answer} />
       <Route path="/AskQuestion" component={AskQuestion} />
       <Route path="/profile/:id" component={Profile} />
