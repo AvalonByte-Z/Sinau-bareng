@@ -59,11 +59,11 @@ const Home = () => (
           <NavLink to="/" style={StyleIn}>
             Home
           </NavLink>
-          
-          <NavLink to="/tanya" style={StyleIn}>
+
+          <NavLink to="/Answer" style={StyleIn}>
             Answer
           </NavLink>
-          <NavLink to="/jawab" style={StyleIn}>
+          <NavLink to="/Question" style={StyleIn}>
             Question
           </NavLink>
 

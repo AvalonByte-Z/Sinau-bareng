@@ -40,12 +40,12 @@ const App = () => (
   <Router>
     <Switch>
       <Route path="/welcome" component={Welcome} />
-      <Route path="/masuk" component={SignIn} />
-      <Route path="/daftar" component={SignUp} />
+      <Route path="/SignIn" component={SignIn} />
+      <Route path="/SignUp" component={SignUp} />
       <Route exact path="/" component={Home} />
-      <Route path="/jawab" component={Answer} />
-      <Route path="/tanya" component={Question} />
-      <Route path="/profil/:id" component={Profile} />
+      <Route path="/Answer" component={Answer} />
+      <Route path="/Question" component={Question} />
+      <Route path="/profile/:id" component={Profile} />
       <Route component={NotFound} />
     </Switch>
   </Router>
