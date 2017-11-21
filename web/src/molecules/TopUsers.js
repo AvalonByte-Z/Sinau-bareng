@@ -49,7 +49,7 @@ const StyleLogo = {
 
 const TopUsers = () => (
   <div>
-    <h5 style={styleHead}> Top Questions </h5>
+    <h5 style={styleHead}> Top Users </h5>
     <div style={styleCol}>
 
     </div>
