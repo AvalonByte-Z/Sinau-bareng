@@ -26,8 +26,62 @@ const styleButton = {
   bottom: "10px"
 };
 
+const initialState = {
+  loginEmail: "",
+  loginPassword: ""
+}
+
 
 class ColumnLogin extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = initialState
+  }
+
+
+  // HANDLE CHANGE IN LOGIN FORM
+
+  handleChange = event => {
+    const name = event.target.name
+    const value = event.target.value
+
+    this.setState({
+      [name]: value
+    })
+  }
+
+  // HANDLE SUBMIT LOGIN
+
+  handleSubmit = event => {
+    event.preventDefault()
+
+    const payload = {
+      email: this.state.loginEmail,
+      password: this.state.loginPassword
+    }
+
+    axios
+      .post(`${process.env.REACT_APP_API_URL}/auth/login`, payload)
+      .then(response => {
+        if (response.data.token) {
+          helpers.setToken(response.data.token)
+          this.setState(initialState)
+          // NOTIFY VISITOR
+          // console.log(response.data)
+          alert(`Login success!`)
+          // REDIRECT TO HOME
+          this.props.history.push("/")
+        } else {
+          throw new Error()
+        }
+      })
+      .catch(error => {
+        alert(`${error}`)
+        console.log(error)
+      })
+  }
+
+
   render() {
     return (
       <Col xs={12}>
@@ -41,6 +95,8 @@ class ColumnLogin extends React.Component {
                 name="loginEmail"
                 id="loginEmail"
                 placeholder="Enter your email here"
+                value={this.state.loginEmail}
+                onChange={this.handleChange}
               />
             </FormGroup>
             <FormGroup>
@@ -50,6 +106,8 @@ class ColumnLogin extends React.Component {
                 name="loginPassword"
                 id="loginPassword"
                 placeholder="Enter your password here"
+                value={this.state.loginPassword}
+                onChange={this.handleChange}
               />
             </FormGroup>
             <br />
