@@ -97,6 +97,43 @@ const ColumnLogin = () => (
     </CardBody>
   </Col>
 );
+const ColumnSignup = () => (
+  <Col xs={12}>
+    <CardBody>
+      <h3>Sign Up</h3>
+      <Form style={styleForm}>
+        <FormGroup>
+          <Label for="signupFullName">Full Name</Label>
+          <Input
+            type="email"
+            name="signupFullName"
+            id="signupFullName"
+            placeholder="Enter your fullname here"
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label for="signupEmail">Email</Label>
+          <Input
+            type="email"
+            name="signupEmail"
+            id="signupEmail"
+            placeholder="Enter your email heree"
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label for="signupPassword">Password</Label>
+          <Input
+            type="password"
+            name="signupPassword"
+            id="signupPassword"
+            placeholder="Enter your password here"
+          />
+        </FormGroup>
+        <Button>Sign Up</Button>
+      </Form>
+    </CardBody>
+  </Col>
+);
 
 // LOGIN
 
@@ -118,7 +155,14 @@ const SignIn = () => (
       <hr />
 
       <Row className="center" id="row-auth">
-        <ColumnLogin />
+        <Col xs={6}>
+          <ColumnLogin />
+        </Col>
+
+        <Col xs={6}>
+          <ColumnSignup />  
+        </Col>
+
       </Row>
     </div>
   </Layout>

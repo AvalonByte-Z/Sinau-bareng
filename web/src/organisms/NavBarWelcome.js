@@ -16,7 +16,7 @@ import {
 const StyleNavbar = {
   backgroundColor: "#47B4F1",
   padding: "0",
-  minHeight: "50px",
+  minHeight: "75px",
   maxWidth: "100%"
 };
 

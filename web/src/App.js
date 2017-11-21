@@ -13,9 +13,6 @@ import Welcome from "./pages/Welcome";
 // Importing masuk pages
 import SignIn from "./pages/SignIn";
 
-// Importing daftar pages
-import SignUp from "./pages/SignUp";
-
 // Importing home pages
 import Home from "./pages/Home";
 
@@ -41,7 +38,6 @@ const App = () => (
     <Switch>
       <Route path="/welcome" component={Welcome} />
       <Route path="/SignIn" component={SignIn} />
-      <Route path="/SignUp" component={SignUp} />
       <Route exact path="/" component={Home} />
       <Route path="/Answer" component={Answer} />
       <Route path="/Question" component={Question} />
