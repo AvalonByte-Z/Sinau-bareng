@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import Dropdown from "../atoms/Dropdown";
+
 import Logo from "../img/logo/LogoRev2.jpeg";
 
 import { Row, Col, Button, Container } from "reactstrap";
@@ -70,9 +72,10 @@ const Home = () => (
         </Col>
 
         <Col xs={1} style={StyleNavbarRight}>
-          <Button color="info" to="/profil" style={StyleButton}>
+          {/* <Button color="info" to="/profil" style={StyleButton}>
             Profile
-          </Button>
+          </Button> */}
+          <Dropdown />
         </Col>
       </Row>
     </Container>
