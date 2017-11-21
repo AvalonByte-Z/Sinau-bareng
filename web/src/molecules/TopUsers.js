@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Button, Input } from 'reactstrap';
 import { NavLink } from "react-router-dom";
 
 // STYLING_CSS ---------------------------------------------------
@@ -51,7 +51,7 @@ const TopUsers = () => (
   <div>
     <h5 style={styleHead}> Top Users </h5>
     <div style={styleCol}>
-
+      
     </div>
   </div>
 );

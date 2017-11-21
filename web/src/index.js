@@ -6,6 +6,8 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "./index.css";
+import './styles/components.css'
+
 
 // import for app
 import App from "./App";
