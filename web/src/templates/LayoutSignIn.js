@@ -3,8 +3,6 @@ import { Container } from "reactstrap";
 
 import Content from "./Content";
 
-import backgroundAbout from "../img/IconAbout/backgroundhome.jpg";
-
 import NavBarWelcome from "../organisms/NavBarWelcome";
 import Footer from "../organisms/Footer";
 
