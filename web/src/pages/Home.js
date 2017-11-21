@@ -3,6 +3,8 @@ import React from "react";
 import ListOfAnswers from "../organisms/ListOfAnswers";
 import Layout from "../templates/Layout";
 import Category from "../atoms/Category"
+import Leftbar from "../organisms/LeftSideBar";
+
 
 import {
   Row,
@@ -35,9 +37,13 @@ marginRight: "100px"
 
 const Home = () => (
   <Layout>
-      <Col xs={9}>
+    <Col xs={3}>
+      <Leftbar />
+    </Col>
+      <Col xs={6}>
         <ListOfAnswers />;
       </Col>
+
       <Col xs={3}>
         <Category />
       </Col>

@@ -20,5 +20,5 @@ yarn build
 
 ```sh
 yarn deploy
-# https://forum.impactbyte.com
+# https://sinau-bareng.co
 ```
