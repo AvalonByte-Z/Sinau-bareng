@@ -63,7 +63,7 @@ const Home = () => (
           <NavLink to="/Answer" style={StyleIn}>
             Answer
           </NavLink>
-          <NavLink to="/Question" style={StyleIn}>
+          <NavLink to="/AskQuestion" style={StyleIn}>
             Question
           </NavLink>
 

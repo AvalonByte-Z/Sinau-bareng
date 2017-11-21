@@ -22,7 +22,9 @@ import Answer from "./pages/Answer";
 // Importing question pages
 import Question from "./pages/Question";
 
-// import AskQuestion from "./pages/AskQuestion";
+// Importing AskQuestion pages
+import AskQuestion from "./pages/AskQuestion";
+
 // import ListQuestion from "./pages/ListQuestion";
 
 // Importing profile pages
@@ -40,7 +42,7 @@ const App = () => (
       <Route path="/SignIn" component={SignIn} />
       <Route exact path="/" component={Home} />
       <Route path="/Answer" component={Answer} />
-      <Route path="/Question" component={Question} />
+      <Route path="/AskQuestion" component={AskQuestion} />
       <Route path="/profile/:id" component={Profile} />
       <Route component={NotFound} />
     </Switch>
