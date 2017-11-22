@@ -1,14 +1,6 @@
 import React from "react"
-import {
-  Row,
-  Col,
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  CardBody
-} from "reactstrap";
+import {  Row, Col, Button, Form, FormGroup, Label, Input, CardBody } from "reactstrap";
+
 import axios from "axios"
 
 import Link from "../atoms/Link"
