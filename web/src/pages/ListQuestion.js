@@ -1,7 +1,7 @@
 import React from "react";
 
 import LinkToProfile from "../atoms/LinkToProfile";
-import Layout from "./templates/Layout";
+import Layout from "../templates/Layout";
 
 import DATAPROFILES from "../data/users";
 

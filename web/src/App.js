@@ -7,9 +7,9 @@ import Home from "./pages/Home";
 import Answer from "./pages/Answer";
 // import Question from "./pages/Question";
 import AskQuestion from "./pages/AskQuestion";
-// import ListQuestion from "./pages/ListQuestion";
+import ListQuestion from "./pages/ListQuestion";
 import Profile from "./pages/Profile";
-// import ListProfile from "./pages/ListProfile";
+import ListProfile from "./pages/ListProfile";
 
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +27,8 @@ const App = () => (
       <Route path="/Answer" component={Answer} />
       <Route path="/AskQuestion" component={AskQuestion} />
       <Route path="/profile/:id" component={Profile} />
+      <Route path="/ListProfile" component={ListProfile} />
+      <Route path="/ListQuestion" component={ListQuestion} />
       <Route component={NotFound} />
     </Switch>
   </Router>
