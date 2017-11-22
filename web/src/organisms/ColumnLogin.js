@@ -1,5 +1,6 @@
 import React from "react"
 import {  Row, Col, Button, Form, FormGroup, Label, Input, CardBody } from "reactstrap";
+import { withRouter } from "react-router-dom"
 
 import axios from "axios"
 
@@ -79,7 +80,7 @@ class ColumnLogin extends React.Component {
       <Col xs={12}>
         <CardBody>
           <h3>Login</h3>
-          <Form style={styleForm}>
+          <Form style={styleForm} onSubmit={this.handleSubmit}>
             <FormGroup>
               <Label for="loginEmail">Email</Label>
               <Input
@@ -110,9 +111,11 @@ class ColumnLogin extends React.Component {
             <br />
             <Row>
               <Col xs={6}>
-                <Button style={styleButton} color="success">
+                {/* <Button style={styleButton} color="success">
                   Login
-                </Button>
+                </Button> */}
+                <input type="submit" value="Login" />
+
               </Col>
             </Row>
           </Form>
@@ -122,4 +125,4 @@ class ColumnLogin extends React.Component {
   }
 }
 
-export default ColumnLogin
+export default withRouter(ColumnLogin)

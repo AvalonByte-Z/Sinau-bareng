@@ -4,8 +4,6 @@ import axios from "axios"
 import LinkToProfile from "../atoms/LinkToProfile";
 import Layout from "../templates/Layout";
 
-import DATAPROFILES from "../data/users";
-
 export default class ListProfile extends React.Component {
   constructor(props) {
       super(props)
@@ -46,6 +44,7 @@ export default class ListProfile extends React.Component {
 
 }
 
+// import DATAPROFILES from "../data/users";
 
 // const ListProfile = () => (
 //   <Layout>
