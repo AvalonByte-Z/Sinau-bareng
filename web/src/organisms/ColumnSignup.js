@@ -6,7 +6,8 @@ import {
   Label,
   Input,
   CardBody
-} from "reactstrap";import axios from "axios"
+} from "reactstrap";
+import axios from "axios"
 
 const initialState = {
   signupName: "",
@@ -66,6 +67,7 @@ render(){
               type="text"
               name="signupName"
               id="signupName"
+              placeholder="Enter your Full Name here"
               value={this.state.signupName}
               onChange={this.handleChange}
             />
