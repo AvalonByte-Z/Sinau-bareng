@@ -8,7 +8,7 @@ import QuestionCard from "../organisms/QuestionCard"
 
 import helpers from "../helpers"
 
-import LinkToProfile from "../atoms/LinkToProfile"
+// import LinkToProfile from "../atoms/LinkToProfile"
 
 axios.defaults.baseURL = process.env.REACT_API_API_URL
 axios.defaults.headers.common["Authorization"] = helpers.getToken()
@@ -25,7 +25,7 @@ export default class Question extends React.Component {
 
   componentWillMount() {
     axios
-      .get(`/api/questions/${this.state.id}`)
+      .get(`${process.env.REACT_APP_API_URL}/api/questions/${this.state.id}`)
       .then(response => {
         this.setState({
           question: response.data,
@@ -55,7 +55,7 @@ export default class Question extends React.Component {
             return (
               <div key={answer._id}>
                 <h6>
-                  <LinkToProfile user={answer.createdBy} /> answered
+                  {/* <LinkToProfile user={answer.createdBy} /> answered */}
                 </h6>
                 <p>{answer.text}</p>
                 <hr />

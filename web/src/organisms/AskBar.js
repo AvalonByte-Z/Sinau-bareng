@@ -3,19 +3,11 @@ import { Button, Form, FormGroup, Input } from "reactstrap";
 import { withRouter } from "react-router-dom"
 import axios from "axios"
 
-
-import LinkToProfile from "../atoms/LinkToProfile";
+// import LinkToProfile from "../atoms/LinkToProfile";
 
 import helpers from "../helpers"
 
-axios.defaults.baseURL = process.env.REACT_API_API_URL
 axios.defaults.headers.common["Authorization"] = helpers.getToken()
-
-const USER = {
-  _id: 1,
-  name: "Thoriq",
-  title: "TK"
-};
 
 class AskBar extends React.Component {
   constructor(props) {
@@ -43,7 +35,7 @@ class AskBar extends React.Component {
     }
 
     axios
-      .post(`/api/questions`, payload)
+      .post(`${process.env.REACT_APP_API_URL}/api/questions`, payload)
       .then(response => {
         console.log(response.data);
         alert(`Asking success!`)
@@ -56,13 +48,13 @@ class AskBar extends React.Component {
   }
 
   render() {
-    const user = this.props.user
+    // const user = this.props.user
 
     return (
       <Form onSubmit={this.handleSubmit}>
-        <h6>
+        {/* <h6>
           <LinkToProfile user={user} /> asked
-        </h6>
+        </h6> */}
         <FormGroup>
           <Input
             type="textarea"
@@ -71,11 +63,6 @@ class AskBar extends React.Component {
             placeholder="What is your question?"
             value={this.state.askTextarea}
             onChange={this.handleChange}
-            onKeyDown={e => {
-              if (e.keyCode === 13 && !e.shiftKey) {
-                e.preventDefault()
-              }
-            }}
           />
         </FormGroup>
         <Button color="primary">Ask Question</Button>
