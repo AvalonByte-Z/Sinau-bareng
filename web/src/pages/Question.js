@@ -4,7 +4,7 @@ import axios from "axios"
 
 import Layout from "../templates/Layout";
 
-import QuestionCard from "../organisms/QuestionCard"
+// import QuestionCard from "../organisms/QuestionCard"
 
 
 import helpers from "../helpers"
