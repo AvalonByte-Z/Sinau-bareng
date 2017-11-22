@@ -20,7 +20,7 @@
     "yarn": "^1.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-env start",
     "dev": "react-app-env start",
     "build": "react-app-env build",
     "test": "react-app-env test --env=jsdom",
