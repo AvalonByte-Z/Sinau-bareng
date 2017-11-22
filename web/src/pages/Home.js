@@ -1,6 +1,7 @@
 import React from "react";
 
 import ListOfAnswers from "../organisms/ListOfAnswers";
+import ListOfQuestions from "../organisms/ListOfQuestions";
 import Layout from "../templates/Layout";
 import RightSideBar from "../organisms/RightSideBar";
 
@@ -12,7 +13,7 @@ import {
 const Home = () => (
   <Layout>
     <Col xs={9}>
-      <ListOfAnswers />
+      <ListOfQuestions />
     </Col>
 
     <Col xs={3}>

@@ -17,20 +17,20 @@ export default class ListOfAnswers extends React.Component {
     axios
       .get(`${process.env.REACT_APP_API_URL}/api/questions`)
       .then(response => {
-        this.setState({ questions: response.data })
+        this.setState ({ questions: response.data})
       })
-      .catch(err => {
-        console.log(err)
-      })
+        .catch(err => {
+          console.log(err);
+        })
   }
 
   render() {
-    return (
-      <Col xs={8}>
+    return(
+      <Col xs={10}>
         {this.state.questions.map(question => {
           return (
             question.answers.length > 0 && (
-              <CardAnswer key={question.id} question={question} />
+              <CardAnswer key={question.id} question={question}></CardAnswer>
             )
           )
         })}
