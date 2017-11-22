@@ -1,5 +1,5 @@
 import React from "react"
-import {  Row, Col, Button, Form, FormGroup, Label, Input, CardBody } from "reactstrap";
+import {  Row, Col, Form, FormGroup, Label, Input, CardBody } from "reactstrap";
 import { withRouter } from "react-router-dom"
 
 import axios from "axios"
@@ -11,12 +11,6 @@ import helpers from "../helpers"
 const styleForm = {
   width: "100%",
   height: "350px"
-};
-
-const styleButton = {
-  width: "90%",
-  position: "absolute",
-  bottom: "10px"
 };
 
 const initialState = {

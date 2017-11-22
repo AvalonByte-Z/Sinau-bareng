@@ -21,9 +21,9 @@ const user = helpers.decodeToken();
 const App = () => (
   <Router>
     <Switch>
+      <Route path="/Welcome" component={Welcome} />
       <Route path="/SignIn" component={SignIn} />
-      <Route path="/" component={Welcome} />
-      <Route path="/home" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path="/Answer" component={Answer} />
       <Route path="/AskQuestion" component={AskQuestion} />
       <Route path="/profile/:id" component={Profile} />
