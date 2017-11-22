@@ -12,7 +12,7 @@ export default class Profile extends React.Component {
   }
 
   componentWillMount() {
-    const id = Number(this.props.match.params.id)
+    const id = Number(this.props.match.params.uID)
     axios
       .get(`${process.env.REACT_API_API_URL}/api/users/${id}`)
       .then(response =>{
@@ -32,7 +32,9 @@ export default class Profile extends React.Component {
       <Layout>
         <div>
           <h3>{profile.name}</h3>
-          
+          {profile.title && <h4>{profile.title}</h4>}
+          {profile.bio && <p>{profile.bio}</p>}
+          <small>id: {profile.id}</small>
         </div>
       </Layout>
     )

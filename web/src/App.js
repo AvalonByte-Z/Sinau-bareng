@@ -3,13 +3,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Welcome from "./pages/Welcome";
 import SignIn from "./pages/SignIn";
+
 import Home from "./pages/Home";
+
 import Answer from "./pages/Answer";
-// import Question from "./pages/Question";
 import AskQuestion from "./pages/AskQuestion";
-import ListQuestion from "./pages/ListQuestion";
+// import Question from "./pages/Question";
+
 import Profile from "./pages/Profile";
 import ListProfile from "./pages/ListProfile";
+import ListQuestion from "./pages/ListQuestion";
 
 import NotFound from "./pages/NotFound";
 
