@@ -1,18 +1,55 @@
 import React from "react";
-import {
-  Col
-} from "reactstrap";
+import { Col } from "reactstrap";
+
+import axios from "axios"
 
 import CardAnswer from "../molecules/CardAnswer"
 
-import DATAQUESTIONS from "../data/questions";
+export default class ListOfAnswers extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      questions: []
+    }
+  }
 
-const Home = () => (
-  <Col xs={12}>
-    {DATAQUESTIONS.map(question => {
-      return question.answers.length > 0 && <CardAnswer question={question} />;
-    })}
-  </Col>
-);
+  componentWillMount() {
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/api/questions`)
+      .then(response => {
+        this.setState ({ questions: response.data})
+      })
+        .catch(err => {
+          console.log(err);
+        })
+  }
 
-export default Home;
+  render() {
+    return(
+      <Col xs={12}>
+        {this.state.questions.map(question => {
+          return (
+            question.answers.length > 0 && (
+              <CardAnswer key={question.id} question={question}></CardAnswer>
+            )
+          )
+        })}
+      </Col>
+    )
+  }
+
+
+}
+
+//
+// import DATAQUESTIONS from "../data/questions";
+//
+// const Home = () => (
+//   <Col xs={12}>
+//     {DATAQUESTIONS.map(question => {
+//       return question.answers.length > 0 && <CardAnswer question={question} />;
+//     })}
+//   </Col>
+// );
+//
+// export default Home;
