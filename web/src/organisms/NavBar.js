@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import Dropdown from "../atoms/Dropdown";
+import DropdownProfile from "../atoms/DropdownProfile";
 
 import Logo from "../img/logo/LogoRev2.jpeg";
 
@@ -67,7 +67,7 @@ const Home = () => (
           {/* <Button color="info" to="/profil" style={StyleButton}>
             Profile
           </Button> */}
-          <Dropdown />
+          <DropdownProfile />
         </Col>
       </Row>
     </Container>
