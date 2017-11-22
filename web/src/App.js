@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 
 import Answer from "./pages/Answer";
 import AskQuestion from "./pages/AskQuestion";
-// import Question from "./pages/Question";
+import Question from "./pages/Question";
 
 import Profile from "./pages/Profile";
 import ListProfile from "./pages/ListProfile";
@@ -29,6 +29,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/Answer" component={Answer} />
       <Route path="/AskQuestion" component={AskQuestion} />
+      <Route path="/question/:id" component={Question} />
       <Route path="/profile/:id" component={Profile} />
       <Route path="/ListProfile" component={ListProfile} />
       <Route path="/ListQuestion" component={ListQuestion} />
