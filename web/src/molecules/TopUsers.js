@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'reactstrap';
 
-// import LinkToProfile from "../atoms/LinkToProfile";
+import ListOfProfile from "../organisms/ListOfProfile";
 
 
 const TopUsers = () => (
@@ -13,6 +13,7 @@ const TopUsers = () => (
        </div>
 
        <div className="p-2">
+         <ListOfProfile></ListOfProfile>
        </div>
 
   	</div>

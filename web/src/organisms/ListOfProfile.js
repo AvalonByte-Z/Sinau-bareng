@@ -1,74 +1,62 @@
-import React from "react"
-import { Col } from "reactstrap"
+import React from "react";
 import axios from "axios"
 
-import CardQuestion from "../molecules/CardQuestion"
+import LinkToProfile from "../atoms/LinkToProfile";
+import Layout from "../templates/Layout";
 
-// -----------------------------------------------------------------------------
-
-export default class ListOfQuestions extends React.Component {
+export default class ListProfile extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = {
-      questions: []
+      super(props)
+      this.state = {
+        users: []
+      }
     }
-  }
 
-  componentWillMount() {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}/api/questions`)
-      .then(response => {
-        this.setState({ questions: response.data })
-      })
-      .catch(err => {
-        console.log(err)
-      })
-  }
-
-  render() {
+    componentWillMount() {
+      axios
+        .get(`${process.env.REACT_APP_API_URL}/api/users`)
+        .then(response => {
+          console.log(response.data)
+          this.setState({
+            users: response.data
+          })
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
+    render() {
+    const users = this.state.users
     return (
-      <Col xs={12}>
-        {this.state.questions.map(question => {
-          return <CardQuestion key={question.id} question={question} />
-        })}
-      </Col>
+        <ul>
+          {users.map(user => {
+            return (
+              <li key={user.id}>
+                <LinkToProfile user={user} />{" "}
+              </li>
+            )
+          })}
+        </ul>
     )
   }
+
 }
 
+// import DATAPROFILES from "../data/users";
 
-// import LinkToQuestion from "../atoms/LinkToQuestion";
-//
-// import DATA_QUESTIONS from "../data/questions";
-//
-// // -----------------------------------------------------------------------------
-//
-// const CardQuestion = props => (
-//   <Card
-//     style={{
-//       margin: "10px"
-//     }}
-//   >
-//     <CardBody key={props.question._id}>
-//       <CardTitle>
-//         <h3>
-//           <LinkToQuestion question={props.question} />
-//         </h3>
-//       </CardTitle>
-//     </CardBody>
-//   </Card>
+// const ListProfile = () => (
+//   <Layout>
+//     <ul>
+//       {DATAPROFILES.map(user => {
+//         console.log(user);
+//         return (
+//           <li>
+//             <LinkToProfile user={user} />
+//           </li>
+//         );
+//       })}
+//     </ul>
+//   </Layout>
 // );
 //
-// // -----------------------------------------------------------------------------
-//
-// const Home = () => (
-//   <Col xs={10}>
-//     {DATA_QUESTIONS.map(question => {
-//       return (
-//         question.answers.length > 0 && <CardQuestion question={question} />
-//       );
-//     })}
-//   </Col>
-// );
-//
-// export default Home;
+// export default ListProfile;
