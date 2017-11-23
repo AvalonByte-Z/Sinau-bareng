@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from 'reactstrap';
 
 import ListOfProfile from "../organisms/ListOfProfile";
 

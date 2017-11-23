@@ -3,10 +3,6 @@ import { CardBody, CardTitle } from "reactstrap"
 
 import LinkToQuestion from "../atoms/LinkToQuestion"
 
-const StyleList = {
-  fontSize: "100px"
-};
-
 const CardTopAnswer = props => (
 
   <div className="d-flex flex-column left">
