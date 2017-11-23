@@ -6,8 +6,8 @@ class RightSideBar extends React.Component{
   render(){
     return(
       <div>
-        <TopQuestions></TopQuestions>
         <TopUsers></TopUsers>
+        <TopQuestions></TopQuestions>
       </div>
     )
   }
