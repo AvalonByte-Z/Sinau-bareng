@@ -31,9 +31,6 @@ const styleFootCaption = {
 };
 
 const styleFootDown = {
-  margin: "20px",
-  fontFamily: "lato",
-  fontSize: "90%",
   color: "#345c7e",
   minHeight: "25px",
   backgroundColor: "#ffffff"
@@ -83,12 +80,9 @@ const Footer = () => (
 
         <Row><br/></Row>
         <Row><br/></Row>
-
       </Container>
-    </div>
 
-    <div style={styleFootDown}>
-      <Container>
+      <div style={styleFootDown}>
         <Row>
           <Col xs="4">Copyright &copy;2017. Sinau Team.</Col>
           <Col xs="4" />
@@ -110,8 +104,11 @@ const Footer = () => (
             </a>
           </Col>
         </Row>
-      </Container>
+      </div>
+
     </div>
+
+
   </div>
 );
 
