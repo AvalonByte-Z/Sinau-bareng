@@ -8,6 +8,7 @@ import {
   FormGroup,
   Input
 } from "reactstrap"
+
 import axios from "axios"
 
 import LinkToProfile from "../atoms/LinkToProfile"
@@ -49,7 +50,7 @@ export default class AnswerCard extends React.Component {
     }
 
     axios
-      .post(`/api/questions/${this.state.question.id}/answers`, payload)
+      .post(`${process.env.REACT_APP_API_URL}/api/questions/${this.state.question._id}/answers`, payload)
       .then(response => {
         this.setState(initialState)
         alert(`Answer success!`)
