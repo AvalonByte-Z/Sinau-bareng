@@ -12,7 +12,7 @@ const TopUsers = () => (
        </div>
 
        <div className="p-2">
-         <ListOfProfile></ListOfProfile>
+         <ListOfProfile />
        </div>
 
   	</div>
