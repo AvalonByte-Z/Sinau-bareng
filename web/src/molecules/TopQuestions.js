@@ -2,6 +2,9 @@ import React from "react";
 
 import { NavLink } from "reactstrap";
 
+import ListOfTopQuestions from "../organisms/ListOfTopQuestions";
+
+
 // STYLING_CSS ---------------------------------------------------
 
 const styleHead = {
@@ -27,16 +30,9 @@ const TopQuestions = () => (
       </div>
 
       <div className="p-2">
-        <NavLink href="#">Rank 1</NavLink>
+        <ListOfTopQuestions />
   		</div>
 
-  		<div className="p-2">
-        <NavLink href="#">Rank 2</NavLink>
-  		</div>
-
-  		<div className="p-2">
-        <NavLink href="#">Rank 3</NavLink>
-  		</div>
   	</div>
   </div>
 );
