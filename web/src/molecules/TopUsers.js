@@ -10,7 +10,8 @@ const styleHead = {
   marginRight: "86%",
   marginBottom: "20px",
   fontWeight: "bold",
-  borderBottom: "solid #1DE9B6"
+  borderBottom: "solid #345c7e",
+  textAlign: "center",
 };
 
 // Category
@@ -18,7 +19,11 @@ const styleHead = {
 const TopUsers = () => (
   <div>
     <div className="d-flex flex-column left">
-      <h5 style={styleHead}> Top Users </h5>
+
+      <div className="p-2">
+        Top Users
+       </div>
+
       <div className="p-2">
         <NavLink href="#">Rank 1</NavLink>
   		</div>
@@ -30,6 +35,7 @@ const TopUsers = () => (
   		<div className="p-2">
         <NavLink href="#">Rank 3</NavLink>
   		</div>
+      
   	</div>
   </div>
 );

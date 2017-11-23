@@ -12,10 +12,24 @@ body {
 /*Navbar Component*/
 .nav {
 	box-shadow: 0 3px 6px -2px rgba(200,200,200,0.2);
-	background-color: white;
-	height: 60px;
+	background-color: #47B4F1;
+	height: 75px;
 	padding-left: 150px;
 	padding-right: 150px;
+}
+
+.StyleLogo {
+  width: 70%;
+  height: 100%
+}
+
+.StyleIn  {
+  fontFamily: raleway;
+  marginTop: 20px;
+  marginRight: 30px;
+  padding: 10;
+  fontSize: 30px;
+  color: #345c7e
 }
 
 .navlink {
@@ -27,6 +41,11 @@ body {
 .quora-logo {
 	padding-top: 15px;
 }
+
+.StyleNavbarRight {
+	padding-top: 15px;
+  padding: 10;
+};
 
 .separator {
 	width: 330px;
@@ -88,11 +107,15 @@ body {
 }
 
 /*left-col*/
-.left {
-	background-color: white;
-	border-radius: 10px;
-	margin-top: 10px;
-}
+.RightBar {
+  fontFamily: "raleway";
+  fontSize: "16px";
+  margin: "0px";
+  marginBottom: "20px";
+  fontWeight: "bold";
+  borderBottom: "solid #345c7e";
+  textAlign: "center";
+};
 
 /*Login*/
 .login {

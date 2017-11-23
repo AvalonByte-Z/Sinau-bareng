@@ -21,7 +21,11 @@ const styleHead = {
 const TopQuestions = () => (
   <div>
     <div className="d-flex flex-column left">
-      <h5 style={styleHead}> Top Questions </h5>
+
+      <div className="p-2">
+        Top Questions
+      </div>
+
       <div className="p-2">
         <NavLink href="#">Rank 1</NavLink>
   		</div>

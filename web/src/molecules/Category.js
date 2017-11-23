@@ -38,8 +38,6 @@ const styleCol = {
   padding: "0"
 };
 
-
-
 const StyleLogo = {
   width: "10%",
   height: "10%",
@@ -54,7 +52,10 @@ const StyleLogo = {
 
 const Category = () => (
   <div>
-    <h5 style={styleHead}> CATEGORIES </h5>
+    <div className="p-2">
+      Categories
+     </div>
+
     <div style={styleCol}>
 
       {/* // Category B.indo */}
