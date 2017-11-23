@@ -1,20 +1,21 @@
 import React from "react"
 import { Card, CardBody, CardTitle } from "reactstrap"
 
+import AnswerBox from "./AnswerBox"
+
 import LinkToQuestion from "../atoms/LinkToQuestion"
 
 const CardAnswer = props => (
-  <Card
-    style={{
-      margin: "10px"
-  }}>
+
+  <div className="d-flex flex-column left">
     <CardBody>
       <CardTitle>
         <LinkToQuestion question={props.question} />
       </CardTitle>
+      <AnswerBox />
     </CardBody>
+  </div>
 
-  </Card>
 )
 
 export default CardAnswer
