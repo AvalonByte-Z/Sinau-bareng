@@ -16,9 +16,9 @@ import ListQuestion from "./pages/ListQuestion";
 
 import NotFound from "./pages/NotFound";
 
-import helpers from "./helpers"
+// import helpers from "./helpers"
 
-const user = helpers.decodeToken();
+// const user = helpers.decodeToken();
 
 
 const App = () => (

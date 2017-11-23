@@ -26,14 +26,6 @@ const styleRow1 = {
   color: "#ffffff"
 };
 
-const styleRow2 = {
-  margin: "auto",
-  padding: "14px",
-  fontFamily: "lato",
-  fontWeight: "bold",
-  textAlign: "center"
-};
-
 const About = () => (
   <div>
     <br />

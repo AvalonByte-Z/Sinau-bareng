@@ -50,7 +50,7 @@ export default class AnswerCard extends React.Component {
     }
 
     axios
-      .post(`${process.env.REACT_APP_API_URL}/api/questions/${this.state.question._id}/answers`, payload)
+      .post(`/api/questions/${this.state.question.id}/answers`, payload)
       .then(response => {
         this.setState(initialState)
         alert(`Answer success!`)

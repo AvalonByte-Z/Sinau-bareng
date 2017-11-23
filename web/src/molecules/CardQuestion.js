@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, CardBody, CardTitle } from "reactstrap"
+import { CardBody, CardTitle } from "reactstrap"
 
 import AnswerBox from "./AnswerBox"
 

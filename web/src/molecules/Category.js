@@ -16,15 +16,15 @@ import Sejarah from "../img/IconCategory/color/sejarah.png";
 
 // STYLING_CSS ---------------------------------------------------
 
-const styleHead = {
-  fontFamily: "raleway",
-  fontSize: "16px",
-  margin: "0px",
-  marginRight: "86%",
-  marginBottom: "20px",
-  fontWeight: "bold",
-  borderBottom: "solid #1DE9B6"
-};
+// const styleHead = {
+//   fontFamily: "raleway",
+//   fontSize: "16px",
+//   margin: "0px",
+//   marginRight: "86%",
+//   marginBottom: "20px",
+//   fontWeight: "bold",
+//   borderBottom: "solid #1DE9B6"
+// };
 
 const styleLi = {
   padding: "5px",
@@ -131,7 +131,7 @@ const Category = () => (
           </NavLink>
         </li>
       </div>
-    </div>    
+    </div>
   </div>
 );
 

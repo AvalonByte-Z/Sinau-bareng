@@ -5,7 +5,7 @@ import DropdownProfile from "../atoms/DropdownProfile";
 
 import Logo from "../img/logo/LogoRev2.jpeg";
 
-import { Nav, NavItem, Row, Col, Container } from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 
 const StyleIn = {
   fontFamily: "raleway",
@@ -49,7 +49,7 @@ class NavBar extends React.Component {
               </Button> */}
               <DropdownProfile />
             </Col>
-          </Row>          
+          </Row>
         </Container>
       </div>
     )
