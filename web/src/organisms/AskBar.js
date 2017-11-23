@@ -3,11 +3,18 @@ import { Button, Form, FormGroup, Input } from "reactstrap";
 import { withRouter } from "react-router-dom"
 import axios from "axios"
 
-// import LinkToProfile from "../atoms/LinkToProfile";
+import LinkToProfile from "../atoms/LinkToProfile";
 
 import helpers from "../helpers"
 
 axios.defaults.headers.common["Authorization"] = helpers.getToken()
+
+const initialState = {
+  isOpen: false,
+  user: helpers.decodeToken(),
+  question: {},
+  answerTextarea: ""
+}
 
 class AskBar extends React.Component {
   constructor(props) {
@@ -48,12 +55,12 @@ class AskBar extends React.Component {
   }
 
   render() {
-    // const user = this.props.user
+    const user = this.props.user
 
     return (
       <Form onSubmit={this.handleSubmit}>
         {/* <h6>
-          <LinkToProfile user={user} /> asked
+          <LinkToProfile user={this.state.user} />asked
         </h6> */}
         <FormGroup>
           <Input

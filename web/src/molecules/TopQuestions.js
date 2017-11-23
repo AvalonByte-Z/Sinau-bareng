@@ -19,6 +19,4 @@ const TopQuestions = () => (
   </div>
 );
 
-// POST
-
 export default TopQuestions;

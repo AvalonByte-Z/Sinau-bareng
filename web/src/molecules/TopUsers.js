@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from 'reactstrap';
 
+// import LinkToProfile from "../atoms/LinkToProfile";
+
 
 const TopUsers = () => (
   <div>
@@ -10,17 +12,8 @@ const TopUsers = () => (
         Top Users
        </div>
 
-      <div className="p-2">
-        <NavLink href="#">Rank 1</NavLink>
-  		</div>
-
-  		<div className="p-2">
-        <NavLink href="#">Rank 2</NavLink>
-  		</div>
-
-  		<div className="p-2">
-        <NavLink href="#">Rank 3</NavLink>
-  		</div>
+       <div className="p-2">
+       </div>
 
   	</div>
   </div>
