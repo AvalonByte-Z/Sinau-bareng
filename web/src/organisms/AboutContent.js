@@ -28,8 +28,6 @@ const styleRow1 = {
 
 const About = () => (
   <div>
-    <br />
-    <br />
     <div style={styleAbout}>
       <Container>
         <Row>

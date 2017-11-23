@@ -5,14 +5,14 @@ import Logo from "../img/logo/LogoRev2.jpeg";
 
 import {
   Row,
-  Col,  
+  Col,
   Container
 } from "reactstrap";
 
 const StyleNavbar = {
   backgroundColor: "#47B4F1",
   padding: "0",
-  minHeight: "75px",
+  minHeight: "65px",
   maxWidth: "100%"
 };
 
@@ -36,22 +36,20 @@ const StyleIn = {
   color: "#345c7e"
 };
 
-const StyleLogo = {
-  width: "10%",
-  height: "100%"
-};
-
 const Home = () => (
-  <div style={StyleNavbar}>
+  <div className="nav">
     <Container>
       <Row>
-        <Col xs={9} style={StyleNavbarLeft}>
+        <Col xs={3}>
           <a href="/">
-            <img src={Logo} alt="logo" style={StyleLogo} />
+            <img src={Logo} alt="logo" className="StyleLogo" />
           </a>
         </Col>
+        <Col xs={6}>
 
-        <Col xs={3} style={StyleNavbarRight}>
+        </Col>
+
+        <Col xs={3} className="StyleNavbarRight">
           <NavLink to="/signin" style={StyleIn}>
             Masuk / Daftar
           </NavLink>
