@@ -52,84 +52,86 @@ const StyleLogo = {
 
 const Category = () => (
   <div>
-    <div className="p-2">
-      Categories
-     </div>
+    <div className="d-flex flex-column left">
+      <div className="p-2">
+        Categories
+       </div>
 
-    <div style={styleCol}>
+      <div style={styleCol}>
 
-      {/* // Category B.indo */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={BIndo} alt="logo" style={StyleLogo} />
-          Bahasa Indonesia
-        </NavLink>
-      </li>
+        {/* // Category B.indo */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={BIndo} alt="logo" style={StyleLogo} />
+            Bahasa Indonesia
+          </NavLink>
+        </li>
 
-      {/* // Category B.inggris */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={BInggris} alt="logo" style={StyleLogo} />
-          Bahasa Inggris
-        </NavLink>
-      </li>
+        {/* // Category B.inggris */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={BInggris} alt="logo" style={StyleLogo} />
+            Bahasa Inggris
+          </NavLink>
+        </li>
 
-      {/* // Category Biologi */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Biologi} alt="logo" style={StyleLogo} />
-          biologi
-        </NavLink>
-      </li>
+        {/* // Category Biologi */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={Biologi} alt="logo" style={StyleLogo} />
+            biologi
+          </NavLink>
+        </li>
 
-      {/* // Category Ekonomi */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Ekonomi} alt="logo" style={StyleLogo} />
-          Ekonomi
-        </NavLink>
-      </li>
+        {/* // Category Ekonomi */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={Ekonomi} alt="logo" style={StyleLogo} />
+            Ekonomi
+          </NavLink>
+        </li>
 
-      {/* // Category fisika */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Fisika} alt="logo" style={StyleLogo} />
-          Fisika
-        </NavLink>
-      </li>
+        {/* // Category fisika */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={Fisika} alt="logo" style={StyleLogo} />
+            Fisika
+          </NavLink>
+        </li>
 
-      {/* // Category Geografi */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Geografi} alt="logo" style={StyleLogo} />
-          Geografi
-        </NavLink>
-      </li>
+        {/* // Category Geografi */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={Geografi} alt="logo" style={StyleLogo} />
+            Geografi
+          </NavLink>
+        </li>
 
-      {/* // Category Kimia */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Kimia} alt="logo" style={StyleLogo} />
-          Kimia
-        </NavLink>
-      </li>
+        {/* // Category Kimia */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={Kimia} alt="logo" style={StyleLogo} />
+            Kimia
+          </NavLink>
+        </li>
 
-      {/* // Category Mathematics */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Math} alt="logo" style={StyleLogo} />
-          Math
-        </NavLink>
-      </li>
+        {/* // Category Mathematics */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={Math} alt="logo" style={StyleLogo} />
+            Math
+          </NavLink>
+        </li>
 
-      {/* // Category Sejarah */}
-      <li style={styleLi}>
-        <NavLink exact to="/masuk">
-          <img src={Sejarah} alt="logo" style={StyleLogo} />
-          Sejarah
-        </NavLink>
-      </li>
-    </div>
+        {/* // Category Sejarah */}
+        <li style={styleLi}>
+          <NavLink exact to="/category">
+            <img src={Sejarah} alt="logo" style={StyleLogo} />
+            Sejarah
+          </NavLink>
+        </li>
+      </div>
+    </div>    
   </div>
 );
 

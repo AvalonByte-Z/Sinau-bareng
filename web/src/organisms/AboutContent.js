@@ -47,16 +47,16 @@ const About = () => (
         <br />
         <br />
         <Row>
-          <h4 style={styleRow2}>Kata SINAU artinya ada BELAJAR.</h4>
+          <h4 style={styleRow1}>Kata SINAU artinya ada BELAJAR.</h4>
         </Row>
         <Row>
-          <h4 style={styleRow2}>
+          <h4 style={styleRow1}>
             Di sini kamu bisa bertanya, berdiskusi dan membantu memecahkan soal
             pelajaran di sekolah.
           </h4>
         </Row>
         <Row>
-          <h4 style={styleRow2}>Belajar bareng tentunya lebih seru!</h4>
+          <h4 style={styleRow1}>Belajar bareng tentunya lebih seru!</h4>
         </Row>
         <Row>
           <Col xs="4">

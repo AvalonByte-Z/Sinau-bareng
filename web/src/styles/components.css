@@ -13,7 +13,7 @@ body {
 .nav {
 	box-shadow: 0 3px 6px -2px rgba(200,200,200,0.2);
 	background-color: #47B4F1;
-	height: 75px;
+	height: 65px;
 	padding-left: 150px;
 	padding-right: 150px;
 }
@@ -33,8 +33,7 @@ body {
 }
 
 .navlink {
-	padding-top: 15px;
-	padding-left: 10px;
+	padding-top: 50px;
 	padding-right: 20px;
 }
 

@@ -27,7 +27,7 @@ export default class ListOfQuestions extends React.Component {
 
   render() {
     return (
-      <Col xs={10}>
+      <Col xs={12}>
         {this.state.questions.map(question => {
           return <CardQuestion key={question.id} question={question} />
         })}
