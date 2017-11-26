@@ -4,7 +4,7 @@ module.exports = [
     title: "Berapa 1 + 1= ?",
     createdBy: {
       _id: 1,
-      name: "Thoriq1"
+      name: "Thoriq11"
     },
     answers: [
       {
