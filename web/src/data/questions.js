@@ -17,7 +17,7 @@ module.exports = [
       },
       {
         _id: 1,
-        text: "bukan bro Jawabannya 1,1",
+        text: "bukan bro Jawabannya 1",
         createdBy: {
           _id: 1,
           name: "Thoriq"
